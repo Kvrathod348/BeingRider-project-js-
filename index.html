@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BeingRider🚵</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
-<body>
-    
+
+<body id="body">
+    <nav class="nav-bar">
+
+        <img src="./BeingRider(logo).png" alt="" class="logo">
+
+        <div class="navbar-name-container">
+
+            <span class="navbar-name">Home</span>
+
+            <span class="navbar-name">Place's</span>
+
+            <span class="navbar-name">Categories</span>
+
+            <span class="navbar-name">Accesories</span>
+
+            <span class="navbar-name">About</span>
+
+        </div>
+
+        <div class="swtich-btn">
+            <a href="#" class="login-btn">LogIn <img src="./bycicle.png" alt="" class="login-img"> </a>
+
+            <img src="./sun.png" alt="" class="theme-btn" id="theme-btn">
+        </div>
+    </nav>
+
+
+        <img src="./assets/home/home poster.jpg" alt="" class="head-img">
+
+        <h1 class="head-img-slogan">Experience the Freedom of Riding</h1>
+        <div class="search-container">
+            <h1 class="head-search-box">Explore The Adventure</h1>
+
+            <select name="text" id="search-box" class="search-box">
+                <option >Choose the Place</option>
+                    <option> Bhor Ghat</option>
+                    <option >Bhutan Bike Tours</option>
+                    <option>Darjeeling to Sikkim</option>
+                    <option>Kerala Bike Trip</option>
+                    <option>Ladakh</option>
+                    <option>Lonavala</option>
+                    <option>Spiti Valley</option>
+                    <option>Western Arunchal Pradesh</option>
+            </select>
+              <br>
+              <button class="btn" onclick="search()">Search</button>
+        </div>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

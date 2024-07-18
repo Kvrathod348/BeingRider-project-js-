@@ -1,0 +1,36 @@
+.head-img{
+    width: 218.5vh;
+    height: 100vh;
+    margin: 12px auto;
+}
+.head-img-slogan{
+    margin-top: -580px;
+    margin-left: 120px;
+}
+.head-search-box{
+    font-size: 55px;
+    width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.search-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 570px;
+}
+.search-box{
+    background-color: tomato;
+    width: 360px;
+    height: 55px;
+    border-radius: 25px 25px 10px 25px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 25px;
+}
+.btn{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 43px;
+    border: double aqua 7px;
+}
