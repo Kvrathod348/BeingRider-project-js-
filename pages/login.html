@@ -3,6 +3,11 @@
 
 <head>
     <link rel="stylesheet" href="./../css/login.css">
+    <link rel="stylesheet" href="./../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-in Page</title>
@@ -16,20 +21,40 @@
             <div class="login-form">
                 <img src="./../assets/Home/BeingRider(logo).png" alt="bike-logo" class="login-logo">
                 <form action="./../index.html" class="input-form">
-                    <input type="text" placeholder="Username" class="input-field">
+                    <input type="text" placeholder="Username" class="input-field font-style" id="username">
                     <br><br>
-                    <input type="password" placeholder="Password" class="input-field">
+                    <input type="password" placeholder="Password" class="input-field font-style" id="password">
                     <br><br>
-                    <button class="login-button" type="submit" >Login</button>
-                    </form>
-                    <br>
-                    <a href="./signup.html" class="sign-up-link">Sign-up</a>
+                    <button class="login-button font-style" type="button" id="login-btn"
+                        onclick="adminLogin()">Login</button>
+                </form>
+                <br> <br>
+                <p id="invaild-details" class="login-msg font-style"></p>
+                <a href="./signup.html" class="sign-up-link font-style">Sign-up</a>
             </div>
             <div class="login-cover-photo">
-                <img src="https://media.istockphoto.com/id/856888722/photo/group-of-a-bikers-on-the-highway.jpg?s=612x612&w=0&k=20&c=BvpWiyvCwUi8VHgUDr7kQWBhgS8k8r9Uli4O6urSvkY=" alt="bike-cover-photo" width="500px" height="600px">
+                <img src="./../assets/spiti-valley/login-cover-photo.jpg"
+                    alt="bike-cover-photo" class="cover-photo">
             </div>
         </div>
     </div>
+
+    <script>
+        function adminLogin() {
+            const inputUserName = document.getElementById("username")
+            const inputPassword = document.getElementById("password")
+            const loginBtn = document.getElementById("login-btn")
+            const invaildMessage = document.getElementById("invaild-details")
+
+            if (inputUserName.value == "admin" && inputPassword.value == "admin") {
+
+                window.location.href = "./../index.html"
+                }
+            else {
+                invaildMessage.innerText = "Invalid Username or Password"
+            }
+        }
+    </script>
 </body>
 
 </html>
