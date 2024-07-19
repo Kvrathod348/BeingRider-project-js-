@@ -61,5 +61,34 @@ font-size: 25px;
     font-size: 17px;
 }
 .informaion-container-two{
+    margin: 80px auto;
+    text-align: center;
+    position: relative;
+}
+.bike-title{
+    width: 650px;
+    height: 500px;
+    margin-top: 70px;
+    margin-left: 85px;
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+.bike-name{
+    font-size: 25px;
+}
+.bike-need{
+    font-size: 15px;
+} 
+
+.bike-img{
+    width: 630px;
+    height: 410px;
+    object-fit: contain;
+    border-radius: 70px;
+    position: absolute;
+    right: 20px;
+    top: 130px;
 
 }
