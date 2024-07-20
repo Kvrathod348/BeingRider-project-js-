@@ -10,21 +10,23 @@ body {
 }
 
 .login-cointainer {
-    background-color: blanchedalmond;
+    border-radius: 10px 0;
     height: 600px;
     width: 900px;
     display: flex;
 }
 
 .login-form {
-    background-color:rgb(223 215 215);
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(223 215 215);
     width: 400px;
     height: 600px;
     
 }
 
 .login-button {
-    margin-left: 150px;
+    width: 150px;
+    margin-left: 120px;
     text-decoration: none;
     font-size: 25px;
     color: rgb(0, 0, 0);
@@ -58,6 +60,20 @@ body {
 }
 
 .sign-up-link {
-    margin-left: 160px;
+    margin-left: 150px;
     font-size: larger;
+    text-decoration: none;
+    color: black;
+}
+
+.cover-photo {
+    border-radius: 0 10px 10px 0;
+    width: 500px;
+    height: 600px;
+}
+
+.login-msg{
+    color: red;
+    margin-top: 0%;
+    text-align: center;
 }
