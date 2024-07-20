@@ -39,4 +39,24 @@
     left: 40px;
     top: 25px;
 }
+.img-info{
+    width: 570px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.info{
+    width: 750px;
+    height: 450px;
+    position: absolute;
+    right: 100px;
+    top: -30px;
+}
+.heading-info{
+font-size: 25px;
+}
+.para-info{
+    font-size: 17px;
+}
+
 
