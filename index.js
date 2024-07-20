@@ -188,3 +188,61 @@ Ziro Valley: Famous for its lush green landscapes and the unique Apatani tribal 
     const spotName = document.getElementById('spot-title');
     spotName.innerText = "Area :" + searchInputValue;
 }
+
+function first(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-pposter-3.jpg'
+    viewName.innerText = 'Bhur Ghat View 🤩'
+    
+}
+function sec(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-4.jpg'
+    viewName.innerText = 'Bhutan Best View 🤩' 
+}
+function third(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-5.jpg'
+    viewName.innerText = 'Darjeeling Best View spot 🤩' 
+}
+function forth(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-6.jpg'
+    viewName.innerText = 'Kerala Best View Spot 💖' 
+}
+function fifth(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-7.jpg'
+    viewName.innerText = 'Ladakh  View 🤩' 
+}
+function sixth(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-8.jpg'
+    viewName.innerText = 'Lonavala Best View 😍' 
+}
+function seven(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-9.jpg'
+    viewName.innerText = 'Spiti Valley best View 💖' 
+}
+function eigth(){
+    const viewImage=document.getElementById('view-img')
+    const viewName=document.getElementById('view-name')
+
+    viewImage.src='./assets/home/home-poster-10.jpeg'
+    viewName.innerText = 'Western Arunchal Pradesh View 🤩' 
+}

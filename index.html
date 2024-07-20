@@ -20,15 +20,15 @@
 
         <div class="navbar-name-container">
 
-            <span class="navbar-name font-style">Home</span>
+            <a href="./index.html" class="links"><span class="navbar-name font-style">Home</span></a>
 
-            <span class="navbar-name font-style">Place's</span>
+            <a href="#" class="links"><span class="navbar-name font-style">Place's</span></a>
 
-            <span class="navbar-name font-style">Categories</span>
+            <a href="#categories" class="links"><span class="navbar-name font-style">Categories</span></a>
 
-            <span class="navbar-name font-style">Accesories</span>
+            <a href="" class="links"><span class="navbar-name font-style">Accesories</span></a>
 
-            <span class="navbar-name font-style">About</span>
+            <a href="./pages/common-about.html" class="links"><span class="navbar-name font-style">About</span></a>
 
         </div>
 
@@ -91,7 +91,7 @@
             <img src="./assets/home/common-bike.jpeg" class="bike-img" id="bike-img">
         </div>
     </div>
-    <div class="categories-container font-style">
+    <div class="categories-container font-style" id="categories">
         <h1 class="categories-head">
             Choose your Adventure Trip✨
         </h1>
@@ -146,7 +146,7 @@
             </div>
             <div class="cards">
                 <a href="./pages/western-arunachal-pradesh.html">
-                    <img src="./assets/home/bhor-ghat.jpg" alt="" class="card"><br>
+                    <img src="./assets/home/western-arunchal-pradesh.jpg" alt="" class="card"><br>
                     
                 </a>
                 <span>Western Arunchal Pradesh</span>
@@ -154,7 +154,20 @@
         </div>
 
     </div>
-
+     <div class="img-change-container font style">
+        <h1 class="font-style" id="view-name">Bhur Ghat View 🤩</h1>
+      <img src="./assets/home/home-pposter-3.jpg" alt="" class="spots-img" id="view-img">
+     </div>
+     <div class="img-changer">
+        <img src="./assets/home/home-pposter-3.jpg" alt="Bhur Ghat" class="spot-img-changes" onclick="first()">
+        <img src="./assets/home/home-poster-4.jpg" alt="Bhouth" class="spot-img-changes" onclick="sec()">
+        <img src="./assets/home/home-poster-5.jpg" alt="Darjeeling" class="spot-img-changes" onclick="third()">
+        <img src="./assets/home/home-poster-6.jpg" alt="Kerala" class="spot-img-changes" onclick="forth()">
+        <img src="./assets/home/home-poster-7.jpg" alt="ladakh" class="spot-img-changes" onclick="fifth()">
+        <img src="./assets/home/home-poster-8.jpg" alt="Lonavala" class="spot-img-changes" onclick="sixth()">
+        <img src="./assets/home/home-poster-9.jpg" alt="spiti Valley" class="spot-img-changes" onclick="seven()">
+        <img src="./assets/home/home-poster-10.jpeg" alt="Western Arunchal Pradesh" class="spot-img-changes" onclick="eigth()">
+     </div>
     <script src="./index.js"></script>
 </body>
 

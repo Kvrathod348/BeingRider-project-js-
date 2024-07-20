@@ -111,10 +111,45 @@ font-size: 25px;
     padding: 5px;
     text-align: center;
     border-radius: 20px;
-
+}
+.card:hover{
+    box-shadow: 0px 0px 35px 1px rgb(144, 146, 146);
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out;
 }
 .card{
     width: 150px;
     height: 100px;
     border-radius: 20px 20px 5px;
+}
+.img-change-container{
+    margin: 60px 0;
+ text-align: center;
+}
+.spots-img{
+width: 50%;
+height: 350px;
+object-fit: cover;
+border-radius: 40px 0 40px 0;
+box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
+}
+.img-changer{
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 20px 20px 30px gray;
+    border-radius: 0 0 35px 35px;
+}
+.spot-img-changes{
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 45px;
+    margin: 5px;
+    cursor: pointer;
+}
+.spot-img-changes:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+    box-shadow: 0px 0px 25px rgb(111, 202, 241);
 }
