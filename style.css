@@ -1,8 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+    background-blend-mode: normal, color-burn;
 }
-
+.font-style{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
 .nav-bar {
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
     height: 140px;
@@ -14,11 +21,11 @@ body {
 }
 
 .navbar-name-container {
-    width: 600px;
+    width: 700px;
     text-align: center;
     margin: -76px 280px;
     padding: 30px;
-    
+
 }
 
 .navbar-name {
@@ -28,7 +35,7 @@ body {
 }
 
 .swtich-btn {
-    width: 260px;
+    width: 265px;
     padding: 45px;
     position: absolute;
     right: 20px;
@@ -40,7 +47,7 @@ body {
     font-size: 25px;
     color: rgb(0, 0, 0);
     background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-    border-radius: 18px ;
+    border-radius: 18px;
     border: solid 1px #565c5a;
     padding: 10px 15px;
     cursor: pointer;
@@ -52,13 +59,33 @@ body {
     box-shadow: gray 0px 5px 10px;
     transition: 0.5s;
 }
-.login-img{
+
+.login-img {
     width: 35px;
-    margin: -11px 5px ;
+    margin: -11px 5px;
 }
 
-.theme-btn{
+.theme-btn {
     width: 50px;
     margin: -14px 29px;
     cursor: pointer;
+}
+
+/* Search btn */
+.btn-search {
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 43px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    box-shadow: rgb(8, 7, 7) 0px 0px 10px;
+    transition: 0.1s;
+    border: solid white 2px;
+    color: white;
 }
