@@ -1,0 +1,120 @@
+
+
+.profile-container {
+
+    background-color: rgb(80, 79, 77);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-card {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(223, 223, 216);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+.profile-pic {
+    height: 80px;
+    background-color: rgb(196, 184, 184);
+    border-radius: 80%;
+    position: relative;
+    border: 1px solid black;
+    left: 60px;
+    top: -60px;
+}
+.profile-name {
+    text-align: left;
+
+    position: relative;
+    bottom: 30px;
+}
+ /* Small Devices */
+ @media screen and (max-width: 600px) {
+    .profile-card {
+        height: 150px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+        text-align: center;
+    }
+    .profile-pic {
+        margin-left: 16%;
+
+    }
+
+    .img {
+        height: 30px;
+        border-radius: 50%;
+        margin-right: auto;
+    }
+}
+
+/* Normal Devices */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .profile-name {
+        font-size: 20px;
+        text-align: center;
+    }
+    .profile-pic {
+        margin: auto;
+    }
+
+
+    .profile-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .profile-card {
+        width: 200px;
+        height: 100px;
+    }
+
+    .profile-name {
+        margin: auto;
+    }
+
+}
+ /* Tablets Devices */
+ @media screen and (min-width: 769px) and (max-width: 992px) {
+    .profile-container{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Large Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .profile-card{
+        width: 200px;
+        height: 150px;
+        margin: -20px;
+        padding: 0px;
+        margin-top: -20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .profile-name{
+        font-size: 30px;
+    }
+    .profile-pic{
+        margin-top: -7px;
+    }
+    .profile-container{
+        top
+    }
+}
