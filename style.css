@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
 }
 .font-style{
     font-family: "Edu AU VIC WA NT Hand", cursive;
