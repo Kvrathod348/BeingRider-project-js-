@@ -81,7 +81,6 @@ font-size: 25px;
 .bike-need{
     font-size: 15px;
 } 
-
 .bike-img{
     width: 630px;
     height: 410px;
@@ -90,5 +89,32 @@ font-size: 25px;
     position: absolute;
     right: 20px;
     top: 130px;
+}
+.categories-container{
+    margin-top: 540px;
+    box-shadow: 5px 10px 35px 1px grey;
+    margin: 600px 20px 10px;
+}
+.categories-head{
+    margin: 5px 20px;
+    padding: 15px;
+}
+.categories-cards{
+    margin: 20px auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards{ 
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
 
+}
+.card{
+    width: 150px;
+    height: 100px;
+    border-radius: 20px 20px 5px;
 }

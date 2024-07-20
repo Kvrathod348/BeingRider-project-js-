@@ -80,6 +80,15 @@ function search() {
                 Varkala: Known
             for its cliffs adjacent to the Arabian Sea, it provides stunning coastal views.
             `
+            bikeName.innerHTML = `The Royal Enfield Himalayan is equipped with a fuel-injected 411cc single-cylinder engine, providing adequate power for both highway cruising and off-road maneuvering`
+            accesories.innerHTML = `<h3 class="font-style">Accessories Needed:</h3>
+               <ul class="bike-need font-style">
+                <li>Helmet: A high-quality helmet is crucial for safety. Ensure it meets safety standards and fits well .</li>
+                <li>Gloves: Protect your hands and provide better grip on the handlebars</li>
+                <li>Armoured Jacket and Pants: Provides protection in case of falls and keeps you warm in varying weather conditions [</li>
+                <li>Boots: Choose durable, comfortable, and water-resistant boots suitable for long rides </li>
+                <li>Rain Gear: Includes waterproof jackets and pants to keep you dry during unexpected showers </li>
+               </ul> `
             break;
 
         case "Ladakh":
@@ -105,6 +114,16 @@ function search() {
             destination
             for adventure seekers.
             `
+            bikeImg.src = './assets/home/bhur-ghat-jawa-Perak.jpg'
+            bikeName.innerHTML = `Royal Enfield Interceptor 650. Royal Enfield is the first name that comes to everyone's mind when thinking of a bike for long tours.`
+            accesories.innerHTML = `<h3 class="font-style">Accessories Needed:</h3>
+               <ul class="bike-need font-style">
+                <li>Helmet: Ensure it meets safety standards.</li>
+                <li>Gloves: For better grip and protection.</li>
+                <li>Jacket: Provides protection against weather and potential falls.</li>
+                <li>Knee Guards: Important for safety during rides.</li>
+                <li>Saddlebags or Tank Bag: Useful for carrying essentials.</li>
+               </ul> `
             break;
 
         case "Lonavala":
