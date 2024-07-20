@@ -12,3 +12,31 @@
     font-weight: 700;
     font-style: normal;
 }
+.btn-search {
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 43px;
+    border: none;
+    cursor: pointer;
+}
+.search-box{
+    width: 360px;
+    height: 60px;
+    border-radius: 25px 25px 10px 25px;
+    margin: 10px ;
+    padding: 4px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}.informaion-container{
+    position: relative;
+    margin: 15px 0;
+}
+.img-container{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
