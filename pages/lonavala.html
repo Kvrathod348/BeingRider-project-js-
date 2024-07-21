@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./../css/lonavala.css">
     <link rel="stylesheet" href="./../style.css">
-    
-</head>
 
-    
+</head>
 
 <body id="body">
     <nav class="nav-bar">
@@ -44,7 +43,117 @@
     </nav>
 
 
-    <img src="https://i.redd.it/7u4gpige3x3b1.jpg" alt="" class="head-img">
-    <h1 class="head-search-box font-style">Explore The Lonavala</h1>
-    </body>
-    </html>
+    <img src="./../assets/lonavala/lonavala.png" alt="lonavala" class="head-img">
+    <div class="lonavala-intro">
+        <h1 class="head-search-box font-style">Explore The Lonavala</h1>
+
+        <p class="lonavala-intro-text font-style">Lonavala is also known as "City of Caves". It is blessed with lush green valleys and pleasant atmosphere throughout the year.
+             Lonavala comes to life during the monsoon season as the countryside turns lush green with waterfalls and ponds.
+              Lonavala offers a panoramic view of the lush green hills of the Sahyadri ranges.
+
+    </div> <br> <br>
+    <div class="search-container">
+        <form action="" type="text">
+            <select name="text" id="input" class="search-box font-style">
+                <option>Choose the Place</option>
+                <option> Lonavala Lake</option>
+                <option>Lohagad Fort</option>
+                <option>Rajmachi Point</option>
+                <option>Karla Caves</option>
+                <option>Zenith Waterfalls</option>
+
+            </select>
+        </form>
+        <br>
+
+        <button class="btn-search font-style" onclick="search()">Search</button>
+    </div>
+    <div class="information-container">
+        <div class="image">
+            <img src="https://www.trawell.in/blog/wp-content/uploads/2024/07/lonavala-main-730x410.jpg" class="lonavala-img">
+        </div>
+        <div class="info">
+            <h1 class="search-info-title font-style">Top Places To Visit</h1>
+
+            <p class="para-info font-style" id="info">Lonavala and the adjacent Khandala are twin hill stations 622 metres (2,041 ft) above sea level,
+                 in the Sahyadri ranges that demarcate the Deccan Plateau and the Konkan coast.
+                  The hill stations sprawl over an approximate area of 38 square kilometres (15 sq mi). Tourism peaks during the monsoon season.
+
+        </div>
+    </div>
+    <div class="location">
+        <div class="map-coordinates">
+            <h1 class="font-style">How to reach lonavala routes</h1>
+        <p class="Route font-style" >Popular routes to travel from Mumbai to Lonavala<br><br>
+            Route 1: Distance and Time taken from Mumbai to Lonavala via Bengaluru – Mumbai Hwy/Mumbai Hwy/Mumbai – Pandharpur Rd/Mumbai – Pune Hwy/Mumbai – Satara Hwy<br>
+            Route 2: Distance and Time taken from Mumbai to Lonavala via NH 48<br>
+        
+
+        </p>
+        <h1 class=" Co-ordiantes-text font style">Co-Ordiantes:</h1>
+        <a href="https://geohack.toolforge.org/geohack.php?pagename=Lonavala&params=18.74806_N_73.40722_E_type:city(57698)_region:IN-MH" class="co-link font-style">18.74806°N 73.40722°E</a>
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d241559.77599291943!2d72.97855281106588!3d18.914943557756594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e9!4m5!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!3m2!1d19.0759837!2d72.8776559!4m5!1s0x3be801098bdf8145%3A0x696b4a60a5e28658!2sLonavala%2C%20Maharashtra!3m2!1d18.7557237!2d73.4090757!5e0!3m2!1sen!2sin!4v1721551459790!5m2!1sen!2sin" width="600" height="450" class="g-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+           </div>
+        </div>
+    </div>
+    <div class="accessories-container">
+        <h1 class="accessories-heading font-style">Accessories</h1>
+        <div class="bike-accessories">
+            <img src="./../assets/spiti-valley/full-set.webp" alt="full riding set" class="accessories-imgs">
+        </div>
+    <div class="Accesories-img">
+        <img src="./../assets/lonavala/helmate.png" class="accs-imgs" alt="helmate">
+        <img src="./../assets/lonavala/jacket.png" class="accs-imgs" alt="jacket">
+        <img src="./../assets/lonavala/gloves.png" class="accs-imgs" alt="gloves">
+        <img src="./../assets/lonavala/shoes.png" class="accs-imgs" alt="shoes">
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+    <div class="footer-1">
+        <div class="footer1-1">
+            <img src="./../assets/Home/BeingRider(logo).png" alt="" class="footer-img">
+        </div>
+        <div class="footer1-1 font-style">
+            <h1 class="footer-link-tile ">Our Link</h1>
+            <span class="footer-link ">Home</span><br>
+            <span class="footer-link ">Product</span><br>
+            <span class="footer-link ">Review</span><br>
+            <a href="./pages/common-about.html" class="links"><span class="footer-link ">About</span></a>
+        </div>
+
+        <div class="footer1-1 font-style">
+            <h1 class="footer-link-tile">Help Center</h1>
+            <span class="footer-link ">FAQ</span><br>
+            <span class="footer-link ">Term of Use</span><br>
+            <span class="footer-link ">Privacy Policy</span><br>
+            <span class="footer-link ">Contact Support</span><br>
+        </div>
+
+        <div class="footer1-1 font-style">
+            <h1 class="footer-link-tile">Contact</h1>
+            <a href="https://github.com/rajeshwarikalhapure/BeingRider-project-js-" target="_blank"><img src="./../assets/home/github.png" alt="" class="footer-social-icon"></a>
+           <a href=" https://www.instagram.com/k.v.rathod_17/?next=%2F" target="_blank"><img src="./../assets/home/instagram.png" alt="" class="footer-social-icon"></a> 
+            <img src="./../assets/Home/twitter.png" alt="" class="footer-social-icon" >
+            <img src="./../assets/Home/whatsapp.png" alt="" class="footer-social-icon">
+        </div>
+    </div>
+</footer>
+    
+</body>
+
+</html>
