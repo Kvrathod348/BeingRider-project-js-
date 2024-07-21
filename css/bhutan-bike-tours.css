@@ -36,45 +36,70 @@
     margin: 15px 0;
 }
 .search-content{
-    position: absolute;
-    left: 40px;
-    top: 25px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: #dde1e8;
+    border-radius: 20px;
 }
 .search-img-section{
+    width: 50%;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-info{
     width: 50px;
     height: 600px;
-    display:flex
-    object-fit: cover;
-    border-radius: 25px;
+    
 }
-.info{
-    width: 750px;
-    height: 450px;
-    position: absolute;
-    right: 100px;
-    top: -30px;
+.bhutan-img{
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
 }
-.heading-info{
-font-size: 25px;
+.search-info{
+    text-align: center;
 }
-.para-info{
-    font-size: 17px;
+.place-info{
+    font-size: 30px;
+    font-weight:bold ;
+}
+
+.place-intro{
+    text-align: center;
+    font-size: 20px;
+}
+
+.bhutan-intro-text{
+    margin: 10px;
+    padding: 10px;
+    background-color: #dde1e8;
+    border-radius: 20px;
 }
 .search-container{
     width: 100%;
     text-align: center;
-}
-.content{
-    width: 100%;
-    height: 600px;
-    background: #000;
-    display: flex;
 }
 
 .info-content{
     background: #68a3ca;
     width: 50%;
     height: 600px;
+}
+.bhutan-intro-text{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.search-info-title{
+    margin-top: 20%;
+}
+.google-map{
+    margin-left: 70px;
+    border-radius: 30px;
 }
 .img-content{
     background: #e9983c;
