@@ -25,7 +25,7 @@
 .profile-pic {
     height: 80px;
     background-color: rgb(196, 184, 184);
-    border-radius: 80%;
+    border-radius: 50%;
     position: relative;
     border: 1px solid black;
     left: 60px;
@@ -114,7 +114,5 @@
     .profile-pic{
         margin-top: -7px;
     }
-    .profile-container{
-        top
-    }
-}
+    
+    
