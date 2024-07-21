@@ -123,11 +123,45 @@
         color: blue;
         text-decoration: none;
     }
-    .accs-imgs{
-        height: 100px;
-        width: 100px;
-        border-radius: 20px;
-       justify-content: space-evenly;
     
-       
+    
+    .bike-accessories {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .accessories-heading {
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .accessories-imgs {
+        border-radius: 10px;
+        height: 500px;
+    
+    }
+    
+    .sub-acc {
+        width: 90px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    
+    
+    .sub-imgs {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img-name {
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .buy-btn {
+        margin-left: 45%;
+    }
+    
+    .accessories-container {
+        background-color: whitesmoke;
     }
