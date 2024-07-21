@@ -41,9 +41,13 @@ body {
 .links:hover{
     color: #2e7cca;
 }
+/* theme swticher */
+
+
+
 .swtich-btn {
-    width: 265px;
-    padding: 45px;
+    width: 305px;
+    padding: 35px;
     position: absolute;
     right: 20px;
     top: 20px;
