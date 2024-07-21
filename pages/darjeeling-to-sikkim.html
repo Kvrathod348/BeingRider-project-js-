@@ -1,11 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BeingRider🚵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/darjeeling-to-sikkim.css">
 </head>
-<body>
-    
+
+<body id="body" class="font-style">
+    <nav class="nav-bar">
+
+        <img src="../assets/Home/BeingRider(logo).png" alt="" class="logo">
+
+        <div class="navbar-name-container">
+
+            <span class="navbar-name font-style">Home</span>
+
+            <span class="navbar-name font-style">Place's</span>
+
+            <span class="navbar-name font-style">Categories</span>
+
+            <span class="navbar-name font-style">Accesories</span>
+
+            <span class="navbar-name font-style">About</span>
+
+        </div>
+
+        <div class="swtich-btn">
+            <a href="./login.html" class="login-btn font-style">LogIn <img src="../assets/home/bycicle.png" alt=""
+                    class="login-img"> </a>
+
+            <img src="../assets/home/sun.png" alt="" class="theme-btn" id="theme-btn">
+        </div>
+    </nav>
+
+
+    <div class="">
+        <img class=" poster" src="../assets/darjeeling-to-sikkim/mp.jpg" width="auto" height="auto">
+
+        <h1 class="head-img-slogan font-style">Let's Feel Freedam</h1>
+    </div>
+
+
+
+
+    <div class="search-container">
+        <h1 class="head-search-box font-style">Explore The Adventure</h1>
+
+        <form action="" type="text">
+            <select name="text" id="input" class="search-box font-style">
+
+                <option>----</option>
+
+            </select>
+        </form>
+
+        <br>
+        <button class="btn-search font-style" onclick="search()">Search</button>
+        <div class="informaion-container">
+            <div class="img-container">
+                <img src="../assets/home/search-starting.png" alt="" class="img-info" id="riderimg">
+            </div>
+            <div class="info">
+                <h2 class="heading-info font-style" id="spot-title">Hello Riders..!</h2>
+                <p class="para-info font-style" id="info">BeingRider is a platform for all the riders to explore the
+                    adventure. We provide you the best places to ride and the best bikes to ride. We also provide you
+                    the
+                    best accessories for your bike needs. Also we Provide the Accesories rent our local areas contact.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="informaion-container-two">
+        <h1 class="font-style">Which Bike is Best for Road Trip✨</h1>
+        <div class="bike-title">
+            <h1 class=" bike-name font-style" id="bike-name">Discover new horizons on two wheels.</h1>
+            <p class="font-style" id="accessories">
+                Baking is not just a culinary art; it's a heartfelt experience that brings joy, comfort, and
+                deliciousness to our lives BeingRider🚵 <br>or<br>
+                A bad day spent baking is better than a good day doing anything else."
+            </p>
+
+        </div>
+        <div class="bike-img-container">
+            <img src="../assets/home/common-bike.jpeg" class="bike-img" id="bike-img">
+        </div>
+    </div>
+    <div class="categories-container font-style">
+        <h1 class="categories-head">
+            Choose your Adventure Trip✨
+        </h1>
+
+        <div class="categories-cards">
+            <div class="cards">
+                <a href="./bhor-ghat.html">
+                    <img src="../assets/home/bhor-ghat.jpg" alt="" class="card"><br>
+                </a>
+                <span>Bhor Ghat</span>
+            </div>
+            <div class="cards">
+                <a href="./bhutan-bike-tours.html">
+                    <img src="../assets/home/bhutan.jpg" alt="" class="card"><br>
+                </a>
+                <span>Bhutan</span>
+            </div>
+            <div class="cards">
+                <a href="./darjeeling-to-sikkim.html">
+                    <img src="../assets/home/darjeeling-sikkim.jpg" alt="" class="card"><br>
+
+                </a>
+                <span>Darjeeling</span>
+            </div>
+            <div class="cards">
+                <a href="./kerala-bike-trip.html">
+                    <img src="../assets/home/kerala-bike-trip.png" alt="" class="card"><br>
+
+                </a>
+                <span>Kerala</span>
+            </div>
+            <div class="cards">
+                <a href="./ladakh.html">
+                    <img src="../assets/home/ladakh.jpg" alt="" class="card"><br>
+
+                </a>
+                <span>Ladakh</span>
+            </div>
+            <div class="cards">
+                <a href="./lonavala.html">
+                    <img src="../assets/home/Lonavala.jpg" alt="" class="card"><br>
+
+                </a>
+                <span>Lonavala</span>
+            </div>
+            <div class="cards">
+                <a href="./spiti-valley.html">
+                    <img src="../assets/home/spiti-valley.jpg" alt="" class="card"><br>
+
+                </a>
+                <span>Spiti Valley</span>
+            </div>
+            <div class="cards">
+                <a href="./western-arunachal-pradesh.html">
+                    <img src="../assets/home/bhor-ghat.jpg" alt="" class="card"><br>
+
+                </a>
+                <span>Western Arunchal Pradesh</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="map">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d227122.18861544412!2d88.12491193181067!3d27.19451864470523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39e42e654cf501bb%3A0x4175555979d4702a!2sDarjeeling%2C%20West%20Bengal!3m2!1d27.0410218!2d88.2662745!4m5!1s0x39e6a56a5805eafb%3A0xa4c4b857c39b5a04!2sSikkim!3m2!1d27.351640699999997!2d88.3239309!5e0!3m2!1sen!2sin!4v1721482525916!5m2!1sen!2sin"
+            width="600" height="450" style="border-bottom:solid 25px #04AA6D;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="pass" style="border-bottom:solid 25px #04AA6D;">
+
+            <p>Darjeeling Sikkim tour Package | Package cost |</p>
+            <p> Itinerary
+                If you are searching for unforgettable Darjeeling Sikkim tour package from NJP IXB,
+                Navigator India offers the right holiday package. Darjeeling to Gangtok is the most picturesque
+                drive in eastern region. Darjeeling Sikkim Gangtok Pelling tour package from Bagdogra is a
+                popular tour.</p>
+            Gangtok, the Sikkim capital, is crafted with lakes & mountains. In this 7 days Darjeeling Sikkim
+            tour
+            you will visit Tsomgo lake & Baba Mandir from Gangtok. Tigermhill, Batasia Loop, HMI is the most
+            important
+            places to visit in Darjeeling sightseeing trip. You will also visit monastery, lake & water
+            falls in Pelling
+            during you Darjeeling Sikkim tour.</p>
+        </div>
+    </div>
+
+    </tr>
+    </table>
+
+    <div class="table">
+        <table class="font-style" id="customers">
+            <tr>
+                <th> Itinerary </th>
+                <th>
+                    Darjeeling Sikkim tour Package 6 days
+                </th>
+                <th>--</th>
+            </tr>
+            <tr>
+                <td>Day 01 :</td>
+                <td>Siliguri/Bagdogra to Darjeeling (83 Km./ 3 hrs)
+                    Welcome to Darjeeling Sikkim Tour Package . On arrival at Siliguri (NJP) railway station or Bagdogra
+                    (IXB)
+                    airport meet & greet by Navigator India’s representative. Transfer from Siliguri/Bagdogra to
+                    Darjeeling through
+                    lush green tea gardens & undulating hills. Check into hotel & rest of the day is t leisure.</td>
+                <td>Siliguri/Bagdogra to Darjeeling (83 Km./ 3 hrs)
+                    Welcome to Darjeeling Sikkim Tour Package . On arrival at Siliguri (NJP) railway station or Bagdogra
+                    (IXB)
+                    airport meet & greet by Navigator India’s representative. Transfer from Siliguri/Bagdogra to
+                    Darjeeling through
+                    lush green tea gardens & undulating hills. Check into hotel & rest of the day is t leisure.
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Day 02 :
+                </td>
+                <td>
+                    Darjeeling sightseeing
+                    Early in the morning (around 4 am), proceed to Tiger Hill to view the breath taking view of
+                    Mt.Kanchandzonga
+                    (28,200 ft.) & effect of sunlight on the same along with the adjoining peaks like Kabru & Pandim.
+                </td>
+                <td>
+                    On the way
+                    back visit Ghoom Monastery & Batasia Loop. After breakfast proceed for a half day excursion to
+                    Himalayan
+                    Mountaineering (HMI) & Padmaja Naidu Himalayan Zoological Park (Thursday closed), Peace Pagoda,
+                    Japanese
+                    Temple,
+                    Tea garden (outer view), Tenzing Rock, Tibetan Refugee Self-Help Center (Sunday closed) etc.
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Day 03 :
+                </td>
+                <td>
+                    Darjeeling to Pelling (Pemayangtse, West Sikkim) (85 km / 3 hrs)
+                    After break fast proceed to Pelling a small township in West Sikkim. Check into you hotel. Rest of
+                    the day
+                    will
+                    be at leisure.
+                </td>
+                <td>
+                    --
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Day 04 :
+                </td>
+                <td>
+                    Pelling sightseeing
+                    Today you will proceed to full day sight seeing to Rimbi False, Rimbi Rock Garden, Kanchandzonga
+                    False,
+                    Khecheopalri Lake, Pemayangtse monastery etc.
+                </td>
+                <td>
+                    --
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Day 05 :
+                </td>
+                <td>
+                    Pelling to Gangtok (East Sikkim) (124 km / 5 hrs)
+                    Today you will transferred to Gangtok, the capital of Sikkim, from Pelling via Ravangla – a small
+                    township &
+                    the
+                    district head quarter of South Sikkim. Check into your hotel in Gangtok. Afternoon free for
+                    refreshment.
+                </td>
+                <td>
+                    --
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    Day 06 :
+                </td>
+                <td>
+                    Excursion – Tsomgo Lake & Baba Mandir
+                    Early in the morning (7.30 am) drive for an excursion to Tsomgo Lake, situated 32 km away from the
+                    city at
+                    an
+                </td>
+                <td>
+                    altitude of above 12,000 ft. & Baba Mandir another 01 hour drive. Enjoy yak ride around the lake
+                    (own cost).
+                    Drive back to hotel for lunch. Enjoy your evening at famous MG Marg in Gangtok.
+                </td>
+            </tr>
+            </table>
+
+    </div>
+
+
 </body>
+
 </html>

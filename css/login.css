@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.roboto {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
 body {
-    background-color:  #f1e9e2;
+    background-color:  #d5dee7;
 }
 .main-cointainer {
     margin-top: 20px;
@@ -13,13 +22,14 @@ body {
     border-radius: 10px 0;
     height: 600px;
     width: 900px;
+    margin-right: 200px;
     display: flex;
 }
 
 .login-form {
     border-radius: 10px 0 0 10px;
     background-color: rgb(223 215 215);
-    width: 400px;
+    width: 500px;
     height: 600px;
     
 }
@@ -57,6 +67,7 @@ body {
     margin: 20px 60px;
     padding: 10px;
     font-size: 20px;
+    
 }
 
 .sign-up-link {
@@ -68,7 +79,7 @@ body {
 
 .cover-photo {
     border-radius: 0 10px 10px 0;
-    width: 500px;
+    width: 700px;
     height: 600px;
 }
 
