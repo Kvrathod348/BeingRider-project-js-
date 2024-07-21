@@ -11,7 +11,7 @@
     width: 100%;
     height: 800px;
     text-align: center;
-    margin-top: 570px;
+    margin: 570px 0px 150px 0px;
 }
 .head-search-box{
     font-size: 55px;
@@ -49,14 +49,35 @@
 }
 .info{
     width: 750px;
-    height: 450px;
+    height: 400px;
     position: absolute;
     right: 100px;
-    top: -30px;
+    top: 60px;
 }
 .heading-info{
 font-size: 25px;
 }
 .para-info{
     font-size: 17px;
+}
+.informaion-container-two{
+    margin: 80px auto;
+    text-align: center;
+}
+.bike-title{
+    width: 650px;
+    height: 500px;
+    margin-top: 155px;
+    margin-left: 85px;
+    font-size: 25px;
+}
+.bike-name{
+    font-size: 25px;
+}
+.bike-need{
+    font-size: 15px;
+} 
+.bike-img-container{
+    width: 630px;
+    margin: -605px 0px 50px 800px;
 }
