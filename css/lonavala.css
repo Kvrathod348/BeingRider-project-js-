@@ -6,6 +6,10 @@
 .head-search-box{
     text-align: center;
 }
+.lonavala-intro-text {
+    text-align: center;
+    font-size: 20px;
+}
 .btn-search {
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     width: 120px;
@@ -30,7 +34,7 @@
 .search-box{
     width: 360px;
     height: 60px;
-    border-radius: 25px 25px 10px 25px;
+    border-radius: 25px 25px 20px 25px;
     margin: 10px auto;
     padding: 4px;
     text-align: center;
@@ -55,13 +59,16 @@
     font-size: 25px;
     }
     .para-info{
-        font-size: 17px;
+        font-size: 20px;
         display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 200px;
     }
     .information-container{
         width: 100%;
         height: 600px;
-        background-color: #9bc5c3;
+        background-color: #d5dee7;
         display: flex;
         margin: 80px auto;
         text-align: center;
@@ -69,9 +76,57 @@
     }
     .image{
         width: 50%;
-        height: 600px;
-        background-color: aqua;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: 20px;
+    }
+    .lonavala-img{
+        height: 450px;
+        width: 600px;
+        border-radius: 20px;
+
+    }
+    .search-info-title {
+        margin-top: 20%;
+        text-align: center;
+        
+    }
+    .google-map {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .g-map{
+        border-radius: 20px;
+        border: none;
+    }
+
+    .map-coordinates {
+        width: 50%;
+        text-align: center;
+    }
+
+    .location {
+        display: flex;
+    }
+    .Route{
+     font-size: 20px;
+    }
+    .Co-ordiantes-text{
+        color:cornflowerblue
+    }
+    .co-link{
+        color: blue;
+        text-decoration: none;
+    }
+    .accs-imgs{
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        justify-content: space-evenly;
+    
     }
