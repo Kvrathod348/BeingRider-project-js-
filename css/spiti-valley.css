@@ -29,7 +29,7 @@
     width: 100%;
     height: 600px;
     display: flex;
-    background-color: #dde1e8;
+    background-color: #d5dee7;
     border-radius: 20px;
 }
 
@@ -71,7 +71,6 @@
 .spiti-intro-text {
     margin: 10px;
     padding: 10px;
-    background-color: #dde1e8;
     border-radius: 20px;
 }
 
@@ -79,7 +78,82 @@
     margin-top: 20%;
 }
 
+.road-map {
+    border: none;
+    border-radius: 20px;
+
+}
+
+.location {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    background-color: #d5dee7;
+} 
+
 .google-map {
-    margin-left: 70px;
-    border-radius: 30px;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-coordinates {
+    width: 50%;
+    height: 600px;
+    text-align: center;
+}
+
+.route-info {
+    font-size: 20px;
+}
+
+.coordinates-text {
+    color: cornflowerblue;
+}
+
+.co-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.bike-accessories {
+    display: flex;
+    justify-content: center;
+}
+
+.accessories-heading {
+    text-align: center;
+    font-size: 40px;
+}
+
+.accessories-imgs {
+    border-radius: 10px;
+    height: 500px;
+
+}
+
+.sub-acc {
+    width: 90px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+.sub-imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.img-name {
+    text-decoration: none;
+}
+
+.buy-btn {
+    margin-left: 45%;
+}
+
+.accessories-container {
+    background-color: whitesmoke;
 }
