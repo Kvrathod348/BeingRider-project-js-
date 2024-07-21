@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
         rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./../css/lonavala.css">
     <link rel="stylesheet" href="./../style.css">
-    
-</head>
 
-    
+</head>
 
 <body id="body">
     <nav class="nav-bar">
@@ -44,7 +43,35 @@
     </nav>
 
 
-    <img src="https://i.redd.it/7u4gpige3x3b1.jpg" alt="" class="head-img">
+    <img src="./../assets/lonavala/lonavala.png" alt="lonavala" class="head-img">
     <h1 class="head-search-box font-style">Explore The Lonavala</h1>
-    </body>
-    </html>
+    <div class="search-container">
+        <form action="" type="text">
+            <select name="text" id="input" class="search-box font-style">
+                <option>Choose the Place</option>
+                <option> Lonavala Lake</option>
+                <option>Lohagad Fort</option>
+                <option>Rajmachi Point</option>
+                <option>Karla Caves</option>
+                <option>Zenith Waterfalls</option>
+
+            </select>
+        </form>
+        <br>
+
+        <button class="btn-search font-style" onclick="search()">Search</button>
+    </div>
+    <div class="information-container">
+        <div class="image">
+            <img src="https://www.trawell.in/blog/wp-content/uploads/2024/07/lonavala-main-730x410.jpg">
+        </div>
+        <div class="info">
+            <p class="para-info font-style" id="info"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> 
+                Consectetur porro tempora ad provident dolorem accusantium quos.<br>
+                Quibusdam fugit fuga porro perspiciatis tempora iste aut, <br>
+                minima itaque adipisci, voluptatibus ratione ipsum.</p>
+        </div>
+    </div>
+</body>
+
+</html>
