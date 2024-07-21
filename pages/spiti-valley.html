@@ -66,15 +66,15 @@
             </select>
         </form>
         <br>
-        <button type="button" class="btn-search font-style">Search</button>
+        <button type="button" class="btn-search font-style" onclick="searchResult()" id="search-places">Search</button>
     </div>
     <div class="search-content">
         <div class="search-img-section">
-            <img src="/assets/spiti-valley/spiti-vally.webp" class="spiti-vally-img" alt="spiti vslly image">
+            <img src="./../assets/spiti-valley/spiti-vally.webp" class="spiti-vally-img" alt="spiti vslly image" id="search-img">
         </div>
         <div class="search-info">
-            <h1 class="search-info-title font-style">Top Places To Visit</h1>
-            <p class="search-info-text font-style">If you are planning a Road Trip to Spiti valley, below are some of
+            <h1 class="search-info-title font-style" id="place-title">Top Places To Visit</h1>
+            <p class="search-info-text font-style" id="place-info">If you are planning a Road Trip to Spiti valley, below are some of
                 the Top Places to Visit in Spiti valley during your Road Trip.
 
                 Manali, Atul Tunnel, Chandratal, Kunzum Pass, Losar, Kaza, Key Monastery, Kibber, Langza, Komic, Hikkim,
@@ -145,6 +145,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./../js/spiti-valley.js"></script>
 </body>
 
 </html>
