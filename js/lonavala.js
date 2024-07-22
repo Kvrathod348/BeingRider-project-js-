@@ -26,3 +26,12 @@ function changeImg(num) {
 
 }
 }
+
+function search(){
+const inputOption = document.getElementById("input")
+const outputOption =inputOption.value 
+
+const imageOption = document.getElementById("spot-img")
+const titleOption = document.getElementById("place-title")
+const paragraphOption = document.getElementById("info")
+}
