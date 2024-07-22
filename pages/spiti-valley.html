@@ -19,23 +19,23 @@
 
         <div class="navbar-name-container">
 
-            <span class="navbar-name font-style">Home</span>
+            <a href="./../index.html" class="links"><span class="navbar-name font-style">Home</span></a>
 
-            <span class="navbar-name font-style">Place's</span>
+            <a href="#" class="links"><span class="navbar-name font-style">Place's</span></a>
 
-            <span class="navbar-name font-style">Categories</span>
+            <a href="./../index.html" class="links"><span class="navbar-name font-style">Categories</span></a>
 
-            <span class="navbar-name font-style">Accesories</span>
+            <a href="#accessories" class="links"><span class="navbar-name font-style">Accesories</span></a>
 
-            <span class="navbar-name font-style">About</span>
+            <a href="./../pages/common-about.html" class="links"><span class="navbar-name font-style">About</span></a>
 
         </div>
 
         <div class="swtich-btn">
-            <a href="./login.html" class="login-btn font-style">LogIn <img src="./../assets/home/bycicle.png" alt=""
+            <a href="./../pages/login.html" class="login-btn font-style">LogIn <img src="./../assets/home/bycicle.png" alt=""
                     class="login-img"> </a>
 
-            <img src="./../assets/home/sun.png" alt="" class="theme-btn" id="theme-btn">
+            <img src="./../assets/home/sun.png" alt="" class="theme-btn" id="icon">
         </div>
     </nav>
 
@@ -66,15 +66,15 @@
             </select>
         </form>
         <br>
-        <button type="button" class="btn-search font-style">Search</button>
+        <button type="button" class="btn-search font-style" onclick="searchResult()" id="search-places">Search</button>
     </div>
     <div class="search-content">
         <div class="search-img-section">
-            <img src="/assets/spiti-valley/spiti-vally.webp" class="spiti-vally-img" alt="spiti vslly image">
+            <img src="./../assets/spiti-valley/spiti-vally.webp" class="spiti-vally-img" alt="spiti vslly image" id="search-img">
         </div>
         <div class="search-info">
-            <h1 class="search-info-title font-style">Top Places To Visit</h1>
-            <p class="search-info-text font-style">If you are planning a Road Trip to Spiti valley, below are some of
+            <h1 class="search-info-title font-style" id="place-title">Top Places To Visit</h1>
+            <p class="search-info-text font-style" id="place-info">If you are planning a Road Trip to Spiti valley, below are some of
                 the Top Places to Visit in Spiti valley during your Road Trip.
 
                 Manali, Atul Tunnel, Chandratal, Kunzum Pass, Losar, Kaza, Key Monastery, Kibber, Langza, Komic, Hikkim,
@@ -100,18 +100,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3518371.3317174558!2d74.64101909974984!3d30.551860768445326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e9!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!3m2!1d28.7040592!2d77.10249019999999!4m5!1s0x3906a40ef42dc09b%3A0x52b583a91132a239!2sSpiti%20Valley%2C%20Marango%20Rangarik%2C%20Himachal%20Pradesh%20172114!3m2!1d32.246137!2d78.034916!5e0!3m2!1sen!2sin!4v1721538191017!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="road-map"></iframe>
         </div>
     </div> <br> 
-    <div class="accessories-container">
+    <div class="accessories-container" id="accessories">
     <h1 class="accessories-heading font-style">Accessories</h1>
     <div class="bike-accessories">
-        <img src="./../assets/spiti-valley/full-set.webp" alt="full riding set" class="accessories-imgs">
+        <img src="./../assets/spiti-valley/full-set.webp" alt="full riding set" class="accessories-imgs" id="mainImg">
     </div>
- <button type="button" class="btn-search font-style buy-btn"><a href="https://m.vffshop.top/products.aspx?cname=bike+riding+full+kit+price&cid=42&url=www.ilcascinone.com" class="img-name font-style" target="_blank">Full Set</a></button>
+ <button type="button" class="btn-search font-style buy-btn"><a href="https://m.vffshop.top/products.aspx?cname=bike+riding+full+kit+price&cid=42&url=www.ilcascinone.com" class="img-name font-style" target="_blank" id="product-link">Full Set</a></button>
         <div class="sub-imgs">
-            <img src="./../assets/spiti-valley/full-set.webp" alt="full riding set" class="sub-acc">
-            <img src="./../assets/spiti-valley/helmet.jpg" alt="helmet" class="sub-acc">
-            <img src="./../assets/spiti-valley/gloves.jpg" alt="gloves" class="sub-acc">
-            <img src="./../assets/spiti-valley/jacket.webp" alt="jacket" class="sub-acc">
-            <img src="./../assets/spiti-valley/shoes.jpg" alt="boots" class="sub-acc">
+            <img src="./../assets/spiti-valley/full-set.webp" alt="full riding set" class="sub-acc" onclick="changeImg(1)">
+            <img src="./../assets/spiti-valley/helmet.jpg" alt="helmet" class="sub-acc" onclick="changeImg(2)">
+            <img src="./../assets/spiti-valley/gloves.jpg" alt="gloves" class="sub-acc" onclick="changeImg(3)">
+            <img src="./../assets/spiti-valley/jacket.webp" alt="jacket" class="sub-acc" onclick="changeImg(4)">
+            <img src="./../assets/spiti-valley/shoes.jpg" alt="boots" class="sub-acc" onclick="changeImg(5)">
         </div>
 
     </div>
@@ -122,8 +122,8 @@
                 </div>
                 <div class="footer1-1 font-style">
                     <h1 class="footer-link-tile ">Our Link</h1>
-                    <span class="footer-link ">Home</span><br>
-                    <span class="footer-link ">Product</span><br>
+                  <a href="./../index.html" class="links"><span class="footer-link ">Home</span></a><br>
+                  <a href="#accessories" class="links"><span class="footer-link ">Product</span></a><br>
                     <span class="footer-link ">Review</span><br>
                     <a href="./../pages/common-about.html" class="links"><span class="footer-link ">About</span></a>
                 </div>
@@ -145,6 +145,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./../js/spiti-valley.js"></script>
 </body>
 
 </html>
