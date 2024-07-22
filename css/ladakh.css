@@ -52,7 +52,7 @@
     height: 400px;
     position: absolute;
     right: 100px;
-    top: 60px;
+    top: 35px;
 }
 .heading-info{
 font-size: 25px;
@@ -67,8 +67,7 @@ font-size: 25px;
 .bike-title{
     width: 650px;
     height: 500px;
-    margin-top: 155px;
-    margin-left: 85px;
+    margin: 88px 0px 50px 85px;
     font-size: 25px;
 }
 .bike-name{
@@ -79,5 +78,22 @@ font-size: 25px;
 } 
 .bike-img-container{
     width: 630px;
-    margin: -605px 0px 50px 800px;
+    margin: -550px 0px 50px 800px;
+}
+.bike-img {
+    width: 450px;
+    height: 410px;
+    object-fit: contain;
+    border-radius: 252px;
+}
+.map{
+    border-radius: 35px;
+}
+.video-blog{
+    text-align: center;
+}
+.youtbe-blogs-video{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 0px 35px 0px 35px;
 }
