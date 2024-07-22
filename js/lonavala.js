@@ -27,6 +27,7 @@ function changeImg(num) {
 }
 }
 
+
 function search(){
 const inputOption = document.getElementById("input")
 const outputOption =inputOption.value 
