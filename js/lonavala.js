@@ -73,7 +73,6 @@ case "Lohagad Fort" :
    break
 
   
-   
 }
 
 }
