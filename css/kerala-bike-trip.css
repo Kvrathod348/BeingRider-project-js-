@@ -131,3 +131,34 @@ font-size: 25px;
 .accesories{
     text-align: center;
 }
+.accessories-container {
+    background-color: whitesmoke;
+}
+.accessories-heading {
+    text-align: center;
+    font-size: 40px;
+}
+.bike-accessories {
+    display: flex;
+    justify-content: center;
+}
+.accessories-imgs {
+    border-radius: 10px;
+    height: 500px;
+
+}
+.buy-btn {
+    margin-left: 45%;
+}
+.img-name {
+    text-decoration: none;
+}
+.sub-acc {
+    width: 90px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.sub-imgs {
+    display: flex;
+    justify-content: center;
+}
