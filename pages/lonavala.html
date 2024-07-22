@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="./../css/lonavala.css">
     <link rel="stylesheet" href="./../style.css">
+    <link rel="stylesheet" href="./../css/lonavala.css">
 
 </head>
 
@@ -103,15 +102,16 @@
     <div class="accessories-container">
         <h1 class="accessories-heading font-style">Accessories</h1>
         <div class="bike-accessories">
-            <img src="./../assets/lonavala/tvs,png.webp" alt="full riding set" class="accessories-imgs">
+            <img src="./../assets/lonavala/tvs,png.webp" alt="full riding set" class="accessories-imgs" id="main-img">
         </div>
-     <button type="button" class="btn-search font-style buy-btn"><a href="https://m.vffshop.top/products.aspx?cname=bike+riding+full+kit+price&cid=42&url=www.ilcascinone.com" class="img-name font-style" target="_blank">Full Set</a></button>
-            <div class="sub-imgs">
-                <img src="https://media.zigcdn.com/media/content/2019/Oct/tvs.jpg" alt="full riding set" class="sub-acc">
-                <img src="./../assets/lonavala/helmate.png" alt="helmet" class="sub-acc">
-                <img src="./../assets/lonavala/jacket.png" alt="gloves" class="sub-acc">
-                <img src="./../assets/lonavala/gloves.png" alt="jacket" class="sub-acc">
-                <img src="./../assets/lonavala/shoes.png" alt="boots" class="sub-acc">
+     <button type="button" class="buy-btn btn-search font-style" ><a href="https://m.vffshop.top/products.aspx?cname=bike+riding+full+kit+price&cid=42&url=www.ilcascinone.com" class="img-name font-style" target="_blank" id="acc-link">Full Set</a></button>
+            
+     <div class="sub-imgs">
+                <img src="./../assets/lonavala/tvs,png.webp" alt="full riding set" class="sub-acc" onclick="changeImg(1)">
+                <img src="./../assets/lonavala/helmate.png" alt="helmet" class="sub-acc"  onclick="changeImg(2)">
+                <img src="./../assets/lonavala/jacket.png" alt="gloves" class="sub-acc"  onclick="changeImg(3)">
+                <img src="./../assets/lonavala/gloves.png" alt="jacket" class="sub-acc"  onclick="changeImg(4)">
+                <img src="./../assets/lonavala/shoes.png" alt="boots" class="sub-acc"  onclick="changeImg(5)">
           
             </div>
         </div>
@@ -154,7 +154,7 @@
         </div>
     </div>
 </footer>
-    
+    <script src="./../js/lonavala.js"></script>
 </body>
 
 </html>
