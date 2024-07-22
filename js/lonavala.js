@@ -35,4 +35,10 @@ const outputOption =inputOption.value
 const imageOption = document.getElementById("spot-img")
 const titleOption = document.getElementById("place-title")
 const paragraphOption = document.getElementById("info")
+
+switch(outputOption) {
+
+    case "Choose the Place" :
+        imageOption.src = ""
+}
 }
