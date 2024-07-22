@@ -39,6 +39,40 @@ const paragraphOption = document.getElementById("info")
 switch(outputOption) {
 
     case "Choose the Place" :
-        imageOption.src = ""
+        imageOption.src = "./../assets/lonavala/top-place.png"
+        titleOption.innerText= "Top Places To Visit"
+        paragraphOption.innerText="Lonavala and the adjacent Khandala are twin hill stations 622 metres (2,041 ft) above sea level, in the Sahyadri ranges that demarcate the Deccan Plateau and the Konkan coast.  The hill stations sprawl over an approximate area of 38 square kilometres (15 sq mi). Tourism peaks during the monsoon season."
+break
+
+   case "Lonavala Lake" :
+    imageOption.src = "./../assets/lonavala/lonavala-lake.png"
+    titleOption.innerText= "Lonavala Lake"
+    paragraphOption.innerText="Lonavala Lake is located on the outskirts of Lonavala and is sourced by the Indrayani River. The lake fills up during the monsoons and dries up during the winter leading it to be popularly known as the monsoon lake.  It is a popular picnic spot offering activities like bird watching, swimming, and angling."
+  break
+
+case "Lohagad Fort" :
+    imageOption.src = "./../assets/lonavala/lohagad-fort.png"
+    titleOption.innerText= "Lohagad Fort"
+    paragraphOption.innerText="Lonavala Lake is located on the outskirts of Lonavala and is sourced by the Indrayani River. The lake fills up during the monsoons and dries up during the winter leading it to be popularly known as the monsoon lake.  It is a popular picnic spot offering activities like bird watching, swimming, and angling."
+  break
+  case "Rajmachi Point" :
+    imageOption.src = "./../assets/lonavala/Rajmachi-point.png"
+    titleOption.innerText= "Rajmachi Point"
+    paragraphOption.innerText="Lonavala Lake is located on the outskirts of Lonavala and is sourced by the Indrayani River. The lake fills up during the monsoons and dries up during the winter leading it to be popularly known as the monsoon lake.  It is a popular picnic spot offering activities like bird watching, swimming, and angling."
+  break
+  case "Karla Caves" :
+    imageOption.src = "./../assets/lonavala/karala-caves.png"
+    titleOption.innerText= "Karla Caves"
+    paragraphOption.innerText="Lonavala Lake is located on the outskirts of Lonavala and is sourced by the Indrayani River. The lake fills up during the monsoons and dries up during the winter leading it to be popularly known as the monsoon lake.  It is a popular picnic spot offering activities like bird watching, swimming, and angling."
+  break
+
+  case "Zenith Waterfalls" :
+    imageOption.src = "./../assets/lonavala/Zenith-Waterfall.png"
+    titleOption.innerText= "Zenith Waterfalls"
+    paragraphOption.innerText="Looking to visit an awesome waterfall near Mumbai during the monsoon or just a weekend road trip which is not too far away from the city then Zenith WaterFall at Khopoli is the desired destination.Khopoli to Zenith falls distance is 4 Km or 10 minutes, please note there is parking space near the Zenith Falls, but you must exercise precaution while leaving your vehicle.It was a dry morning with the sun shining down the window of my bedroom. During the rainy season in Mumbai, it is a rare visual and a much-cheered one as well. However."
+   break
+
+  
 }
+
 }
