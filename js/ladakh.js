@@ -1,5 +1,7 @@
 // themme part
-const lightMood = document.getElementById('icon-1')
+
+function light(){
+    const lightMood = document.getElementById('icon-1')
     lightMood.classList.add('active-one')
      
     const darkMood = document.getElementById('icon-2')
@@ -8,8 +10,6 @@ const lightMood = document.getElementById('icon-1')
     const categorie = document.getElementById('categorie')
     categorie.classList.remove('categories-box')
 
-function light(){
-    
 }
 function dark(){
     const darkMood = document.getElementById('icon-2')
