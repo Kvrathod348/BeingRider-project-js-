@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/ladakh.css">
 </head>
 
-<body>
+<body id="body">
     <nav class="nav-bar">
 
         <img src="../assets/home/BeingRider(logo).png" alt="" class="logo">
@@ -36,7 +36,8 @@
             <a href="./pages/login.html" class="login-btn font-style">LogIn <img src="../assets/home/bycicle.png" alt=""
                     class="login-img"> </a>
 
-            <img src="../assets/home/sun.png" alt="" class="theme-btn" id="theme-btn">
+            <img src="../assets/home/sun.png" alt="" class="theme-btn" id="icon-1" onclick="light()">
+            <img src="../assets/home/moon.png" alt="" class="theme-btn" id="icon-2" onclick="dark()">
         </div>
     </nav>
 
@@ -76,9 +77,9 @@
     <div class="informaion-container-two">
         <h1 class="font-style">Map Details</h1>
         <div class="bike-title">
-            <h1 class=" bike-name font-style" id="description">BeingRider provide the Map an, Distance Details and
-                Co-ordinates </h1>
-            <p class="font-style" id="map-details">
+            <h2 class=" bike-name font-style" id="description">BeingRider provide the Map an, Distance Details and
+                Co-ordinates </h2>
+            <p class="font-style para-info" id="map-details">
             </p>
             <h3 class="font-style" id="co-ordinates">
             </h3>
@@ -112,7 +113,7 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
-    <footer>
+    <footer id="footer">
         <div class="footer-1">
             <div class="footer1-1">
                 <img src="../assets/home/BeingRider(logo).png" alt="" class="footer-img">

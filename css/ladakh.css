@@ -67,18 +67,18 @@ font-size: 25px;
 .bike-title{
     width: 650px;
     height: 500px;
-    margin: 88px 0px 50px 85px;
+    margin: 150px 0px 50px 85px;
     font-size: 25px;
 }
 .bike-name{
-    font-size: 25px;
+    font-size: 20px;
 }
 .bike-need{
     font-size: 15px;
 } 
 .bike-img-container{
     width: 630px;
-    margin: -550px 0px 50px 800px;
+    margin: -610px 0px 50px 800px;
 }
 .bike-img {
     width: 450px;
@@ -96,4 +96,7 @@ font-size: 25px;
     margin: 10px;
     padding: 15px;
     border-radius: 0px 35px 0px 35px;
+}
+.footer-box{
+    color: #000000;
 }
