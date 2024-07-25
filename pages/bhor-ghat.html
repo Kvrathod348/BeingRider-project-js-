@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhor ghat</title>
+    <title>Bhor-Ghat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./../style.css">
-    <link rel="stylesheet" href="./../css/bhor-ghat.css">
+        <link rel="stylesheet" href="./../css/style.css">   
+        <link rel="stylesheet" href="./../css/bhor-ghat.css">
+        <script src="./../js/bhor-ghat.js"></script>
+    
+
+
 </head>
 
 <body id="body">
@@ -32,7 +37,7 @@
         </div>
 
         <div class="swtich-btn">
-            <a href="./login.html" class="login-btn font-style">LogIn <img src="./../assets/home/bycicle.png" alt="bicycle"
+            <a href="./../pages/login.html" class="login-btn font-style">LogIn <img src="./../assets/home/bycicle.png" alt=""
                     class="login-img"> </a>
 
             <img src="./../assets/home/sun.png" alt="" class="theme-btn" id="theme-btn">
@@ -40,18 +45,105 @@
     </nav>
 
 
-    <img src="./../assets/bhor-ghat/bhor ghat.jpg" alt="bhor-ghat" class="heading-img">
+    <img src="./../assets/bhor-ghat/bhor ghat.jpg" alt="bhor-ghat" class="head-img">
+    <div class="bhor-intro">
+        <h1 class="head-search-box font-style">Explore The Bhor-ghat</h1>
 
-    <h1 class="head-title font-style">More About Bhor-ghat</h1>
+        <p class="bhor-intro-text font-style">Bhorghat was the site of a battle between the Maratha Empire centered in Pune and the foreign powers in Mumbai. They dispatched a large force to capture Pune, which had to pass through the Bhorghat pass, where they were intercepted by Maratha forces. In the battle that ensued, the Marathas inflicted a crushing defeat on the British in what would be known as the Battle of Bhorghat.
 
-    <div>
-        <form>
-            <option value=""></option>
+
+    </div> <br> <br>
+    <div class="search-container">
+        <form action="" type="text">
+            <select name="text" id="input" class="search-box font-style">
+                <option>Choose the Place</option>
+                <option> Rajgad Fort</option>
+                <option>Menwali ghat</option>
+                <option>Purandar Fort</option>
+                <option>Suvela Machi</option>
+
+            </select>
         </form>
+        <br>
+
+        <button class="btn-search font-style" onclick="search()">Search</button>
+    </div>
+    <div class="information-container">
+        <div class="image">
+            <img src="./../assets/Home/bhor-ghat.jpg" id="spot-img" class="bhor-img">
+        </div>
+        <div class="info">
+            <h1 class="search-info-title font-style" id="place-title">Information of Bhor-ghat</h1>
+
+            <p class="para-info font-style" id="info">Bhor ghat is a mountain pass located between Palasdari and Khandala for railway and between Khopoli and Khandala on the road route in Maharashtra, India, on the crest of the Western Ghats.
+
+
+
+        </div>
+    </div>
+    <div class="location">
+        <div class="map-coordinates">
+            <h1 class="font-style">How to reach Bhor-ghat routes</h1>
+        <p class="Route font-style" >Popular routes to travel from Mumbai to Bhor-ghat<br><br>
+            Route 1: Distance and Time taken from Mumbai to Bhor-ghat – Mumbai Hwy/Mumbai Hwy/Mumbai – Pandharpur Rd/Mumbai – Pune Hwy/Mumbai – Satara Hwy<br>
+            Route 2: Distance and Time taken from Mumbai to Bhor-ghat<br>
+        </p>
+        
+        </div>
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15110.350860431838!2d73.36555560000001!3d18.77194405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be8072ddafc3927%3A0xf930813bac8a430d!2sBhor%20Ghat!5e0!3m2!1sen!2sin!4v1721819369204!5m2!1sen!2sin" width="600" height="450" class="g-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+           </div>
+        </div>
     </div>
 
-    </select>
-   
+
+    <div class="accessories-container">
+        <h1 class="accessories-heading font-style">Accessories</h1>
+        <div class="bike-accessories">
+            <img src="./../assets/bhor-ghat/tvs,png.webp" alt="full riding set" class="accessories-imgs" id="main-img">
+        </div>
+     <button type="button" class="buy-btn btn-search font-style" ><a href="https://www.flipkart.com/fox-1-bike-riding-kit-knee-aviatorridingglasses-armor-jacket-l-40-combo/p/itmeanaya7sstzha" class="img-name font-style" target="_blank" id="acc-link">Full Set</a></button>
+            
+     <div class="sub-imgs">
+                <img src="./../assets/bhor-ghat/tvs,png.webp" alt="full riding set" class="sub-acc" onclick="changeImg(1)">
+                <img src="./../assets/bhor-ghat/helmate.png" alt="helmet" class="sub-acc"  onclick="changeImg(2)">
+                <img src="./../assets/bhor-ghat/jacket.png" alt="gloves" class="sub-acc"  onclick="changeImg(3)">
+                <img src="./../assets/bhor-ghat/gloves.png" alt="jacket" class="sub-acc"  onclick="changeImg(4)">
+                <img src="./../assets/bhor-ghat/shoes.png" alt="shoes" class="sub-acc"  onclick="changeImg(5)">
+          
+            </div>
+        </div>
+    <footer>
+    <div class="footer-1">
+        <div class="footer1-1">
+            <img src="./../assets/Home/BeingRider(logo).png" alt="" class="footer-img">
+        </div>
+        <div class="footer1-1 font-style">
+            <h1 class="footer-link-tile ">Our Link</h1>
+            <span class="footer-link ">Home</span><br>
+            <span class="footer-link ">Product</span><br>
+            <span class="footer-link ">Review</span><br>
+            <a href="./pages/common-about.html" class="links"><span class="footer-link ">About</span></a>
+        </div>
+
+        <div class="footer1-1 font-style">
+            <h1 class="footer-link-tile">Help Center</h1>
+            <span class="footer-link ">FAQ</span><br>
+            <span class="footer-link ">Term of Use</span><br>
+            <span class="footer-link ">Privacy Policy</span><br>
+            <span class="footer-link ">Contact Support</span><br>
+        </div>
+
+        <div class="footer1-1 font-style">
+            <h1 class="footer-link-tile">Contact</h1>
+            <a href="https://github.com/mauryagulave27/BeingRider-project-js-/tree/main" target="_blank"><img src="./../assets/home/github.png" alt="" class="footer-social-icon"></a>
+           <a href=" https://www.instagram.com/k.v.rathod_17/?next=%2F" target="_blank"><img src="./../assets/home/instagram.png" alt="" class="footer-social-icon"></a> 
+            <img src="./../assets/Home/twitter.png" alt="" class="footer-social-icon" >
+            <img src="./../assets/Home/whatsapp.png" alt="" class="footer-social-icon">
+        </div>
+    </div>
+</footer>
+    
 </body>
 
 </html>
