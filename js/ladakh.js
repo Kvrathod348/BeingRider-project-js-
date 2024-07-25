@@ -26,7 +26,6 @@ function dark(){
 }
 
 
-
 function search() {
     const searchInput = document.getElementById('input')
     const searchInputValue = searchInput.value;

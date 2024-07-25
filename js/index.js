@@ -1,4 +1,12 @@
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
 // themme part
+
 function light(){
     const lightMood = document.getElementById('icon-1')
     lightMood.classList.add('active-one')
@@ -287,3 +295,4 @@ function eigth(){
     viewImage.src='./assets/home/home-poster-10.jpeg'
     viewName.innerText = 'Western Arunchal Pradesh View 🤩' 
 }
+
