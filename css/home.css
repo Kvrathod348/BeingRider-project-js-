@@ -1,7 +1,7 @@
 .head-img{
     width: 218.5vh;
     height: 100vh;
-    margin: 12px auto;
+    margin: 160px auto;
 }
 .head-img-slogan{
     margin-top: -580px;
@@ -11,7 +11,7 @@
     width: 100%;
     height: 800px;
     text-align: center;
-    margin-top: 570px;
+    margin-top: 380px;
 }
 .head-search-box{
     font-size: 55px;
@@ -52,7 +52,7 @@
     height: 450px;
     position: absolute;
     right: 100px;
-    top: -30px;
+    top: 25px;
 }
 .heading-info{
 font-size: 25px;
