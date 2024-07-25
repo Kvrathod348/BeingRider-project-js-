@@ -77,7 +77,9 @@ body {
     width: 400px;
     padding: 35px;
 }
+.moods{
 
+}
 .login-btn {
     text-decoration: none;
     margin: 0px 20px;
@@ -163,17 +165,17 @@ body {
 
 .footer-1 {
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-    display: inline-block;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
     text-align: center;
-    margin: 80px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;   
 }
-
+.footer1-1{
+    margin: 30px 0;
+}
 .footer-img {
-    width: 450px;
+    width: 350px;
 }
 .footer-link {
     font-size: 15px;
@@ -195,10 +197,13 @@ body {
     transform: scale(1.1);
     transition: 0.6s ease-in-out;
 }
+.links{
+    text-decoration: none;
+}
 
 /* Reset styles (optional) */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -212,6 +217,7 @@ body {
 
     .nav-links.active {
         display: flex;
+        margin: 100px 0px 0px 0px;;
     }
 
     .nav-links li {
@@ -222,5 +228,87 @@ body {
     .hamburger {
         display: block;
         cursor: pointer;
+        margin: 28px -50px 0px 0px;
+    }
+    .logo {
+        width: 300px;
+    }
+    .swtich-btn {
+        width: 184px;
+        padding: 9px;
+        height: 83px;
+        margin: 55px -20px 0px 0px;
+    }
+    .moods{
+        width: 150px;
+        padding: 5px;
+        margin: -121px 0px 0px 12px;
+    }
+    .login-btn {
+        text-decoration: none;
+        background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+        border-radius: 18px;
+        border: solid 1px #565c5a;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    
+    .theme-btn {
+        width: 45px;
+        margin: 15px 10px;
+        cursor: pointer;
+    }
+    
+    /* theme swticher */
+
+    .btn-search {
+        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+        width: 120px;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 43px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn-search:hover {
+        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+        box-shadow: rgb(8, 7, 7) 0px 0px 10px;
+        transition: 0.1s;
+        border: solid white 2px;
+        color: white;
+    }
+    
+    .footer-1 {
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center; 
+    }
+    .footer1-1{
+        margin: 30px 0;
+    }
+    .footer-img {
+        width: 350px;
+    }
+    .footer-link {
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .footer-link-tile {
+        font-size: 25px;
+    } 
+    .footer-social-icon {
+        width: 50px;
+        margin: 8px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .footer-social-icon:hover {
+        box-shadow: #48fa69 0px 0px 25px;
+        transform: scale(1.1);
+        transition: 0.6s ease-in-out;
     }
 }
