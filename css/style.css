@@ -74,11 +74,12 @@ body {
     width: 300px;
 }
 .swtich-btn {
-    width: 400px;
+    width: 300px;
     padding: 35px;
 }
 .moods{
-
+    margin: -25px 0px 0px 160px;
+    width: 130px;
 }
 .login-btn {
     text-decoration: none;
@@ -105,7 +106,7 @@ body {
 }
 
 .theme-btn {
-    width: 40px;
+    width: 45px;
     margin: -14px 5px;
     cursor: pointer;
 }
@@ -200,8 +201,6 @@ body {
 .links{
     text-decoration: none;
 }
-
-/* Reset styles (optional) */
 
 @media screen and (max-width: 600px) {
     .nav-links {
