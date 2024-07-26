@@ -131,13 +131,16 @@
 .accessories-imgs {
     border-radius: 10px;
     height: 500px;
+    border:1px solod black;
 
 }
 
 .sub-acc {
     width: 90px;
     margin: 20px;
+    border:1px solod black;
     border-radius: 10px;
+    cursor:pointer
 }
 
 
