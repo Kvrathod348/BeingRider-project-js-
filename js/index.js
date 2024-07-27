@@ -189,7 +189,7 @@ function search() {
             rich cultural heritage </li> 
             <li> Adventure activities: Lonavala offers a range of adventure activities,
                 such as trekking, rock climbing, and rappelling, making it a popular destination
-            for adventure seekers. < /li> 
+            for adventure seekers. </li> 
             <li> Wildlife: The region is home to a diverse range of wildlife, including
             leopards, langurs, and peacocks, making it a popular destination
             for wildlife

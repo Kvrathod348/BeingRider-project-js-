@@ -600,5 +600,153 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
 
 }
 @media screen and (min-width:992px) and (max-width:1200px){
+    .head-img{
+        width: 86.8rem;
+        margin: 160px auto;
+    }
+    .head-img-slogan{
+        margin-top: -580px;
+        margin-left: 120px;
+    }
+    .search-container{
+        width: 100%;
+        height: 800px;
+        text-align: center;
+        margin-top: 380px;
+    }
+    .head-search-box{
+        font-size: 55px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    
+    .search-box{
+        width: 360px;
+        height: 60px;
+        border-radius: 25px 25px 10px 25px;
+        margin: 10px 0px 0px 170px;
+        padding: 4px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .informaion-container{
+        position: relative;
+        margin: 15px 0;
+    }
+    .img-container{
+        position: absolute;
+        left: 40px;
+        top: 25px;
+    
+    }
+    .img-info{
+        width: 570px;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .info{
+        width: 700px;
+        margin: 10px -265px 0px 0px;
+    }
+    .heading-info{
+    font-size: 25px;
+    }
+    .para-info{
+        font-size: 17px;
+        text-align: left;
+    }
+    .informaion-container-two{
+        margin: 160px auto;
+        text-align: center;
+        position: relative;
+    }
+    .bike-title{
+        width: 43rem;
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 70px;
+        margin: 51px 0px 0px 35px;
+    }
+    .bike-name{
+        font-size: 25px;
+    }
+    .bike-need{
+        font-size: 15px;
+    } 
+    .bike-img{
+        width: 35rem;
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 70px;
+        margin: 0px -179px 0px 0px;
+    }
+    .categories-container{
+        margin: 693px 20px 10px;
+        width: 84git rem;
+    }
+    .categories-head{
+        margin: 5px 20px;
+        padding: 15px;
+    }
+    .categories-cards{
+        margin: 20px auto;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .heading-card{
+        margin: 55px 0;
+    }
+    .cards{ 
+        width: 150px;
+        margin: 15px 80px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .card:hover{
+        box-shadow: 0px 0px 35px 1px rgb(144, 146, 146);
+        transform: scale(1.1);
+        transition: 0.6s ease-in-out;
+    }
+    .card{
+        width: 200px;
+        height: 115px;
+        border-radius: 20px 20px 5px;
+    }
+    .img-change-container{
+        width: 115%;
+        margin: 60px 0;
+        text-align: center;
+    }
+    .spots-img{
+        width: 60rem;
+        height: 30rem;
+    }
+    .img-changer{
+        margin: 64px;
+        padding: 21px;
+        width: 75rem;
+    }
+    .spot-img-changes{
+        width: 160px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 45px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .spot-img-changes:hover{
+        transform: scale(1.1);
+        transition: 0.5s ease-out;
+        box-shadow: 0px 0px 25px rgb(111, 202, 241);
+    }
+}
+@media screen and (max-width: 1200px){
 
 }
