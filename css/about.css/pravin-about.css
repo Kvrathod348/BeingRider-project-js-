@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
 }
 .profile-card {
     background-color: white;
@@ -49,7 +49,7 @@ body {
 .profile-content .info {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .profile-content .info span {
     font-weight: bold;
