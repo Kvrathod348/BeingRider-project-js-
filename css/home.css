@@ -305,8 +305,8 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
 }
 @media screen and (min-width:600px) and (max-width:768px){
     .head-img{
-        width: 37.5rem;
-        height: 21rem;
+        width: 48rem;
+        height: 23rem;
         margin: 160px auto;
     }
     .head-img-slogan{
@@ -322,7 +322,7 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
     }
     .head-search-box{
         font-size: 40px;
-        width: 300px;
+        width: 33rem;
         margin: -13px auto;
         padding: 30px;
     }
@@ -339,7 +339,8 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
     }
     
     .informaion-container{
-        margin: 15px 0;
+        margin: -35px 0;
+        width: 46rem;
     }
     .img-container{
         position: absolute;
@@ -348,36 +349,37 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
     
     }
     .img-info{
-        width: 525px;
-        height: 450px;
+        width: 43rem;
+        height: 24rem;
         object-fit: cover;
         border-radius: 25px;
-        margin: 600px 0px 0px 0px;
+        margin: 485px 0px 0px 0px;
+        box-shadow: 0px 0px 20px 5px #6d6a6a;
     }
     .info{
-        width: 470px;
-        height: 645px;
-        padding: 15px;
+        width: 44rem;
+        margin: 0px -100px 0px 0px;
+        padding: 2rem;
     }
     .heading-info{
         font-size: 34px;
-        width: 26rem;
-        margin: 15px;
+        width: 28rem;
+        margin: 15px auto;
     }
     .para-info{
         font-size: 17px;
     }
     .informaion-container-two{
-        margin: 760px 0px 0px auto;
+        margin: 435px 0px 0px 0px;
         text-align: center;
     }
     .bike-title{
-        width: 447px;
-        height: 500px;
+        margin: 40px 0px 0px 55px;
     }
     .bike-name{
         font-size: 20px;
-        width: 400px;
+        width: 37rem;
+        margin: -15px 0px 30px 0px;
     }
     .bike-need{
         font-size: 15px;
@@ -385,15 +387,14 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
         margin: 5px;
     } 
     .bike-img{
-        width: 555px;
-        height: 410px;
+        width: 35rem;
         object-fit: contain;
         border-radius: 200px;
-        margin: 385px 0px 0px 0px;
+        margin: 282px 100px 0px 0px;
     }
     .categories-container{
-        box-shadow: 5px 10px 35px 1px grey;
-        margin: 925px 20px 10px;
+        box-shadow: 5px 10px 35px 1px #726e6e;
+        margin: 835px 20px 10px;
         min-width: 35rem;
     }
     .categories-head{

@@ -344,7 +344,7 @@ body {
     .hamburger {
         display: block;
         cursor: pointer;
-        margin: 28px -50px 0px 0px;
+        margin: 28px 0px 0px 245px;
     }
     .logo {
         width: 300px;
@@ -358,14 +358,13 @@ body {
     .moods{
         width: 150px;
         padding: 5px;
-        margin: -121px 0px 0px 12px;
+        margin: -111px 0px 0px 12px;
     }
     .login-btn {
         text-decoration: none;
         background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-        border-radius: 18px;
-        border: solid 1px #565c5a;
-        padding: 5px 10px;
+        border-radius: 9px;
+        padding: 5px;
         cursor: pointer;
     }
     
@@ -378,13 +377,14 @@ body {
     /* theme swticher */
 
     .btn-search {
-        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-        width: 120px;
+        background-image: linear-gradient(to top, #dad4ec 1%, #f3e7e9 100%);
+        width: 10rem;
         margin: 15px;
         padding: 15px;
         border-radius: 43px;
-        border: none;
+        border: solid 2px;
         cursor: pointer;
+        font-size: 15px;
     }
     
     .btn-search:hover {
