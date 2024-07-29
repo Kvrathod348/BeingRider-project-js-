@@ -1,11 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin: 225px auto;
+}
+.profile-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 20px;
+    width: 800px;
+}
+.sidebar {
+    background:linear-gradient(135deg, #fdfcfb 0%, #87796e 100%);
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100px;
+}
+.sidebar a {
+    color: white;
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+}
+.profile-content {
+    flex: 1;
+    padding: 20px;
+}
+.profile-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.profile-content p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+.profile-content .info {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.profile-content .info span {
+    font-weight: bold;
+    width: 150px;
+}
+.profile-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 0px;
+}
+.home-button {
+    background: linear-gradient(to right, #ff6f61, #ff9472);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.profile-pic-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.profile-pic-wrapper img {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.profile-pic-wrapper .camera-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
