@@ -9,39 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
         rel="stylesheet">
+       
 
-    <link rel="stylesheet" href="./../css/lonavala.css">
-    <link rel="stylesheet" href="./../style.css">
+        <link rel="stylesheet" href="./../css/style.css">    
+        <link rel="stylesheet" href="./../css/lonavala.css">
+    
+
 
 </head>
 
 <body id="body">
-    <nav class="nav-bar">
+     <nav class="nav-bar">
+        
+        <img src="./../assets/home/BeingRider(logo).png" alt="" class="logo"> 
 
-        <img src="./../assets/home/BeingRider(logo).png" alt="" class="logo">
 
-        <div class="navbar-name-container">
-
-            <span class="navbar-name font-style">Home</span>
-
-            <span class="navbar-name font-style">Place's</span>
-
-            <span class="navbar-name font-style">Categories</span>
-
-            <span class="navbar-name font-style">Accesories</span>
-
-            <span class="navbar-name font-style">About</span>
+         <div class="navbar-name-container">
+            <a href="./../index.html" class="links"><span class="navbar-name font-style">Home</span></a>
+            <a href="#" class="links"><span class="navbar-name font-style">Place's</span></a>
+            <a href="./../index.html" class="links"><span class="navbar-name font-style">Categories</span></a>
+            <a href="#accessories" class="links"><span class="navbar-name font-style">Accesories</span></a>
+            <a href="./../pages/common-about.html" class="links"><span class="navbar-name font-style">About</span></a>
 
         </div>
 
         <div class="swtich-btn">
-            <a href="./login.html" class="login-btn font-style">LogIn <img src="./../assets/home/bycicle.png" alt=""
+            <a href="./../pages/login.html" class="login-btn font-style">LogIn <img src="./../assets/home/bycicle.png" alt=""
                     class="login-img"> </a>
 
             <img src="./../assets/home/sun.png" alt="" class="theme-btn" id="theme-btn">
+            
         </div>
-    </nav>
-
+    </nav> 
+    
 
     <img src="./../assets/lonavala/lonavala.png" alt="lonavala" class="head-img">
     <div class="lonavala-intro">
@@ -70,10 +70,10 @@
     </div>
     <div class="information-container">
         <div class="image">
-            <img src="https://www.trawell.in/blog/wp-content/uploads/2024/07/lonavala-main-730x410.jpg" class="lonavala-img">
+            <img src="./../assets/lonavala/top-place.png" id="spot-img" class="lonavala-img">
         </div>
         <div class="info">
-            <h1 class="search-info-title font-style">Top Places To Visit</h1>
+            <h1 class="search-info-title font-style" id="place-title">Top Places To Visit</h1>
 
             <p class="para-info font-style" id="info">Lonavala and the adjacent Khandala are twin hill stations 622 metres (2,041 ft) above sea level,
                  in the Sahyadri ranges that demarcate the Deccan Plateau and the Konkan coast.
@@ -90,7 +90,7 @@
         
 
         </p>
-        <h1 class=" Co-ordiantes-text font style">Co-Ordiantes:</h1>
+        <h1 class=" Co-ordiantes-text font-style">Co-Ordiantes:</h1>
         <a href="https://geohack.toolforge.org/geohack.php?pagename=Lonavala&params=18.74806_N_73.40722_E_type:city(57698)_region:IN-MH" class="co-link font-style">18.74806°N 73.40722°E</a>
         </div>
         <div class="google-map">
@@ -98,22 +98,24 @@
            </div>
         </div>
     </div>
+
+
     <div class="accessories-container">
         <h1 class="accessories-heading font-style">Accessories</h1>
         <div class="bike-accessories">
-            <img src="./../assets/spiti-valley/full-set.webp" alt="full riding set" class="accessories-imgs">
+            <img src="./../assets/lonavala/tvs,png.webp" alt="full riding set" class="accessories-imgs" id="main-img">
         </div>
-    <div class="Accesories-img">
-        <img src="./../assets/lonavala/helmate.png" class="accs-imgs" alt="helmate">
-        <img src="./../assets/lonavala/jacket.png" class="accs-imgs" alt="jacket">
-        <img src="./../assets/lonavala/gloves.png" class="accs-imgs" alt="gloves">
-        <img src="./../assets/lonavala/shoes.png" class="accs-imgs" alt="shoes">
-
-
-    </div>
-
-
-
+     <button type="button" class="buy-btn btn-search font-style" ><a href="https://www.flipkart.com/fox-1-bike-riding-kit-knee-aviatorridingglasses-armor-jacket-l-40-combo/p/itmeanaya7sstzha" class="img-name font-style" target="_blank" id="acc-link">Full Set</a></button>
+            
+     <div class="sub-imgs">
+                <img src="./../assets/lonavala/tvs,png.webp" alt="full riding set" class="sub-acc" onclick="changeImg(1)">
+                <img src="./../assets/lonavala/helmate.png" alt="helmet" class="sub-acc"  onclick="changeImg(2)">
+                <img src="./../assets/lonavala/jacket.png" alt="gloves" class="sub-acc"  onclick="changeImg(3)">
+                <img src="./../assets/lonavala/gloves.png" alt="jacket" class="sub-acc"  onclick="changeImg(4)">
+                <img src="./../assets/lonavala/shoes.png" alt="shoes" class="sub-acc"  onclick="changeImg(5)">
+          
+            </div>
+        </div>
 
 
 
@@ -153,7 +155,7 @@
         </div>
     </div>
 </footer>
-    
+    <script src="./../js/lonavala.js"></script>
 </body>
 
 </html>

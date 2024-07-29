@@ -5,38 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeingRider🚵</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
 
 <body id="body">
-    <nav class="nav-bar">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/home/BeingRider(logo).png" alt="" class="logo">
+            </div>
+            <ul class="nav-links font-style">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="./pages/common-about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="swtich-btn">
+                <a href="./pages/login.html" class="login-btn font-style">LogIn <img src="./assets/home/bycicle.png"
+                        alt="" class="login-img"> </a>
 
-        <img src="./assets/home/BeingRider(logo).png" alt="" class="logo">
-
-        <div class="navbar-name-container">
-
-            <a href="./index.html" class="links"><span class="navbar-name font-style">Home</span></a>
-
-            <a href="#" class="links"><span class="navbar-name font-style">Place's</span></a>
-
-            <a href="#categories" class="links"><span class="navbar-name font-style">Categories</span></a>
-
-            <a href="" class="links"><span class="navbar-name font-style">Accesories</span></a>
-
-            <a href="./pages/common-about.html" class="links"><span class="navbar-name font-style">About</span></a>
-
-        </div>
-
-        <div class="swtich-btn">
-            <a href="./pages/login.html" class="login-btn font-style">LogIn <img src="./assets/home/bycicle.png" alt=""
-                    class="login-img"> </a>
-
-            <img src="./assets/home/sun.png" alt="" class="theme-btn" id="icon">
+                <div class="moods">
+                    <img src="./assets/home/sun.png" alt="" class="theme-btn" id="icon-1" onclick="light()">
+                    <img src="./assets/home/moon.png" alt="" class="theme-btn" id="icon-2" onclick="dark()">
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -44,7 +49,10 @@
     <img src="./assets/home/home poster.jpg" alt="" class="head-img">
 
     <h1 class="head-img-slogan font-style">Experience the Freedom of Riding</h1>
-    <div class="search-container">
+
+
+    <div class="search-container" data-aos="fade-up"
+    data-aos-duration="3000">
         <h1 class="head-search-box font-style">Explore The Adventure</h1>
         <form action="" type="text">
             <select name="text" id="input" class="search-box font-style">
@@ -59,13 +67,15 @@
                 <option>Western Arunchal Pradesh</option>
             </select>
         </form>
-        <br>
         <button class="btn-search font-style" onclick="search()">Search</button>
-        <div class="informaion-container">
-            <div class="img-container">
-                <img src="./assets/home/search-starting.png" alt="" class="img-info" id="riderimg">
+        <div class="informaion-container" >
+            <div class="img-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+                <img src="./assets/home/plan-the-moter tour.jpeg" alt="" class="img-info" id="riderimg">
+
             </div>
-            <div class="info">
+
+            <div class="info" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h2 class="heading-info font-style" id="spot-title">Hello Riders..!</h2>
                 <p class="para-info font-style" id="info">BeingRider is a platform for all the riders to explore the
                     adventure. We provide you the best places to ride and the best bikes to ride. We also provide you
@@ -76,10 +86,14 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="informaion-container-two">
-        <h1 class="font-style">Which Bike is Best for Road Trip✨</h1>
-        <div class="bike-title">
-            <h1 class=" bike-name font-style" id="bike-name">Discover new horizons on two wheels.</h1>
+        <h1 class="font-style heading-info-2">Which Bike is Best for Road Trip✨</h1>
+
+        <div class="bike-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <h1 class="bike-name font-style" id="bike-name">Discover new horizons on two wheels.</h1>
             <p class="font-style" id="accessories">
                 Baking is not just a culinary art; it's a heartfelt experience that brings joy, comfort, and
                 deliciousness to our lives BeingRider🚵 <br>or<br>
@@ -87,11 +101,14 @@
             </p>
 
         </div>
-        <div class="bike-img-container">
+        <div class="bike-img-container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="./assets/home/common-bike.jpeg" class="bike-img" id="bike-img">
         </div>
     </div>
-    <div class="categories-container font-style" id="categories">
+
+
+    <div class="categories-container font-style" id="categories" data-aos="fade-up"
+    data-aos-duration="3000">
         <h1 class="categories-head">
             Choose your Adventure Trip✨
         </h1>
@@ -112,53 +129,54 @@
             <div class="cards">
                 <a href="./pages/darjeeling-to-sikkim.html">
                     <img src="./assets/home/darjeeling-sikkim.jpg" alt="" class="card"><br>
-                    
+
                 </a>
                 <span>Darjeeling</span>
             </div>
             <div class="cards">
                 <a href="./pages/kerala-bike-trip.html">
                     <img src="./assets/home/kerala-bike-trip.png" alt="" class="card"><br>
-                    
+
                 </a>
                 <span>Kerala</span>
             </div>
             <div class="cards">
                 <a href="./pages/ladakh.html">
                     <img src="./assets/home/ladakh.jpg" alt="" class="card"><br>
-                    
+
                 </a>
                 <span>Ladakh</span>
             </div>
             <div class="cards">
                 <a href="./pages/lonavala.html">
                     <img src="./assets/home/lonavala.jpg" alt="" class="card"><br>
-                    
+
                 </a>
                 <span>Lonavala</span>
             </div>
             <div class="cards">
                 <a href="./pages/spiti-valley.html">
                     <img src="./assets/home/spiti-valley.jpg" alt="" class="card"><br>
-                    
+
                 </a>
                 <span>Spiti Valley</span>
             </div>
             <div class="cards">
                 <a href="./pages/western-arunachal-pradesh.html">
                     <img src="./assets/home/western-arunchal-pradesh.jpg" alt="" class="card"><br>
-                    
+
                 </a>
                 <span>Western Arunchal Pradesh</span>
             </div>
         </div>
 
     </div>
-     <div class="img-change-container font style">
-        <h1 class="font-style" id="view-name">Bhur Ghat View 🤩</h1>
-      <img src="./assets/home/home-pposter-3.jpg" alt="" class="spots-img" id="view-img">
-     </div>
-     <div class="img-changer">
+    <div class="img-change-container font style" data-aos="fade-up"
+    data-aos-duration="3000">
+        <h1 class="font-style heading-card" id="view-name">Bhur Ghat View 🤩</h1>
+        <img src="./assets/home/home-pposter-3.jpg" alt="" class="spots-img" id="view-img" onmouseover="imgOver()">
+    </div>
+    <div class="img-changer" id="categorie">
         <img src="./assets/home/home-pposter-3.jpg" alt="Bhur Ghat" class="spot-img-changes" onclick="first()">
         <img src="./assets/home/home-poster-4.jpg" alt="Bhouth" class="spot-img-changes" onclick="sec()">
         <img src="./assets/home/home-poster-5.jpg" alt="Darjeeling" class="spot-img-changes" onclick="third()">
@@ -166,41 +184,67 @@
         <img src="./assets/home/home-poster-7.jpg" alt="ladakh" class="spot-img-changes" onclick="fifth()">
         <img src="./assets/home/home-poster-8.jpg" alt="Lonavala" class="spot-img-changes" onclick="sixth()">
         <img src="./assets/home/home-poster-9.jpg" alt="spiti Valley" class="spot-img-changes" onclick="seven()">
-        <img src="./assets/home/home-poster-10.jpeg" alt="Western Arunchal Pradesh" class="spot-img-changes" onclick="eigth()">
-     </div>
-<footer>
-    <div class="footer-1">
-        <div class="footer1-1">
-            <img src="./assets/home/BeingRider(logo).png" alt="" class="footer-img">
-        </div>
-        <div class="footer1-1 font-style">
-            <h1 class="footer-link-tile ">Our Link</h1>
-            <span class="footer-link ">Home</span><br>
-            <span class="footer-link ">Product</span><br>
-            <span class="footer-link ">Review</span><br>
-            <a href="./pages/common-about.html" class="links"><span class="footer-link ">About</span></a>
-        </div>
-
-        <div class="footer1-1 font-style">
-            <h1 class="footer-link-tile">Help Center</h1>
-            <span class="footer-link ">FAQ</span><br>
-            <span class="footer-link ">Term of Use</span><br>
-            <span class="footer-link ">Privacy Policy</span><br>
-            <span class="footer-link ">Contact Support</span><br>
-        </div>
-
-        <div class="footer1-1 font-style">
-            <h1 class="footer-link-tile">Contact</h1>
-            <a href="https://github.com/Kvrathod348/BeingRider-project-js-" target="_blank"><img src="./assets/home/github.png" alt="" class="footer-social-icon"></a>
-           <a href=" https://www.instagram.com/k.v.rathod_17/?next=%2F" target="_blank"><img src="./assets/home/instagram.png" alt="" class="footer-social-icon"></a> 
-            <img src="./assets/home/twitter.png" alt="" class="footer-social-icon" >
-            <img src="./assets/home/whatsapp.png" alt="" class="footer-social-icon">
-        </div>
+        <img src="./assets/home/home-poster-10.jpeg" alt="Western Arunchal Pradesh" class="spot-img-changes"
+            onclick="eigth()">
     </div>
-</footer>
-     
-    <script src="./js/index.js"></script>
 
+    <div class="randomPlace">
+
+        <div class="randomPlacehead font-style">
+            <h1>
+                If you are confused then click here then we will suggest
+            </h1>
+        </div>
+
+        <div class="randomPlaceImg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <img src="./assets/home/plan-the-moter tour.jpeg" alt="" id="randomImg" class="randomImg">
+
+            <h2 class="font-style randomPlaceName" id="randomname"> Showing Advanture Your Destiny</h2>
+        </div>
+
+        <div class="font-style">
+            <button class="btn-go" onclick="go()">Let's Go😉</button>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <div class="footer-1">
+            <div class="footer1-1">
+                <img src="./assets/home/BeingRider(logo).png" alt="" class="footer-img">
+            </div>
+            <div class="footer1-1 font-style">
+                <h1 class="footer-link-tile ">Our Link</h1>
+                <a href="./index.html" class="links">Home</a><br>
+                <span class="footer-link ">Product</span><br>
+                <span class="footer-link ">Review</span><br>
+                <a href="./pages/common-about.html" class="links"><span class="footer-link ">About</span></a>
+            </div>
+
+            <div class="footer1-1 font-style" id="contact">
+                <h1 class="footer-link-tile">Help Center</h1>
+                <span class="footer-link ">FAQ</span><br>
+                <span class="footer-link ">Term of Use</span><br>
+                <span class="footer-link ">Privacy Policy</span><br>
+                <span class="footer-link ">Contact Support</span><br>
+            </div>
+
+            <div class="footer1-1 font-style">
+                <h1 class="footer-link-tile">Contact</h1>
+                <a href="https://github.com/Kvrathod348/BeingRider-project-js-" target="_blank"><img
+                        src="./assets/home/github.png" alt="" class="footer-social-icon"></a>
+                <a href=" https://www.instagram.com/k.v.rathod_17/?next=%2F" target="_blank"><img
+                        src="./assets/home/instagram.png" alt="" class="footer-social-icon"></a>
+                <img src="./assets/home/twitter.png" alt="" class="footer-social-icon">
+                <img src="./assets/home/whatsapp.png" alt="" class="footer-social-icon">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

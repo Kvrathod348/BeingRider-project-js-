@@ -66,6 +66,6 @@ function changeImg(num) {
     }
     else if (num == 5) {
         mainImg.src = "./../assets/spiti-valley/shoes.jpg"
-        buttonName.innerHTML =  '<a href="https://www.amazon.in/Axor-Slipstream-Riding-Boot-Black/dp/B0B2NXK5VC/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dnO1FSbqeAtfh2BD_7SVWnPLasAHdja1GSeG7328MuQ0PLymFzmmj7MYOpJYp0a70_NjoIXmVDeYUY-gQgewm2JLPxC8RwcabYoH8Ug-xQs0rFS7_8TY1I7s9qWbHNgTrMOcaaeLvHrLljSHndkFwJ5ylUkGmAVuzi3ImhyQVewZiTCOKE4vQ7GhXk-xgz_2iZAWq_sxmCZM3N-YcKTD0pg29vi_65lnH0azW4iBi4yoKcQU5XYQCbh-zUuLXpsbrNtXfEB_Ps3ZWKqJ3Mklp2UrRCn6P9XfpWZ4-RSuGIc.AiNmbdkVVf9f47MgPVCo5RTICmozTcSWEKq1Av0E2QU&dib_tag=se&keywords=Riding+Boots&qid=1721590500&sr=8-11" class="img-name font-style" target="_blank" id="product-link">Boots</a>'
+        buttonName.innerHTML ='<a href="https://www.amazon.in/Axor-Slipstream-Riding-Boot-Black/dp/B0B2NXK5VC/ref=sr_1_11?dib=eyJ2IjoiMSJ9.dnO1FSbqeAtfh2BD_7SVWnPLasAHdja1GSeG7328MuQ0PLymFzmmj7MYOpJYp0a70_NjoIXmVDeYUY-gQgewm2JLPxC8RwcabYoH8Ug-xQs0rFS7_8TY1I7s9qWbHNgTrMOcaaeLvHrLljSHndkFwJ5ylUkGmAVuzi3ImhyQVewZiTCOKE4vQ7GhXk-xgz_2iZAWq_sxmCZM3N-YcKTD0pg29vi_65lnH0azW4iBi4yoKcQU5XYQCbh-zUuLXpsbrNtXfEB_Ps3ZWKqJ3Mklp2UrRCn6P9XfpWZ4-RSuGIc.AiNmbdkVVf9f47MgPVCo5RTICmozTcSWEKq1Av0E2QU&dib_tag=se&keywords=Riding+Boots&qid=1721590500&sr=8-11" class="img-name font-style" target="_blank" id="product-link">Boots</a>'
     }
 }

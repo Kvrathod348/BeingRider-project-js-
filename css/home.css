@@ -1,7 +1,6 @@
 .head-img{
-    width: 218.5vh;
-    height: 100vh;
-    margin: 12px auto;
+    width: 100%;
+
 }
 .head-img-slogan{
     margin-top: -580px;
@@ -9,13 +8,11 @@
 }
 .search-container{
     width: 100%;
-    height: 800px;
     text-align: center;
-    margin-top: 570px;
+    margin-top: 555px;
 }
 .head-search-box{
     font-size: 55px;
-    width: 650px;
     margin: 0 auto;
     padding: 30px;
 }
@@ -32,68 +29,65 @@
 }
 
 .informaion-container{
-    position: relative;
-    margin: 15px 0;
+margin: 57px 0px;
+height: 30rem;
 }
 .img-container{
-    position: absolute;
-    left: 40px;
-    top: 25px;
-
+    margin: 0px 765px 0px 0px;
 }
 .img-info{
-    width: 570px;
+    width: 645px;
     height: 450px;
     object-fit: cover;
     border-radius: 25px;
 }
 .info{
-    width: 750px;
-    height: 450px;
-    position: absolute;
-    right: 100px;
-    top: -30px;
+    width: 634px;
+    margin: -440px 0px 140px 785px;
 }
 .heading-info{
-font-size: 25px;
+font-size: 35px;
+margin: 25px;
 }
 .para-info{
-    font-size: 17px;
+    font-size: 20px;
+    text-align: left;
 }
 .informaion-container-two{
-    margin: 80px auto;
+    width: 89rem;
+    margin: 50px auto;
     text-align: center;
-    position: relative;
 }
 .bike-title{
     width: 650px;
     height: 500px;
-    margin-top: 70px;
-    margin-left: 85px;
+    margin: 45px 0px 0px 0px;
     font-size: 25px;
-    position: absolute;
-    left: 0;
-    top: 40px;
 }
 .bike-name{
-    font-size: 25px;
+    font-size: 30px;
+    margin: 15px;
 }
 .bike-need{
     font-size: 15px;
+    margin: 20px;
+    text-align: left;
 } 
+.bike-img-container{
+    width: 40rem;
+    margin: -500px 0px 0px 725px;
+}
 .bike-img{
     width: 630px;
     height: 410px;
     object-fit: contain;
-    border-radius: 70px;
-    position: absolute;
-    right: 20px;
-    top: 130px;
+    border-radius: 50px; 
 }
 .categories-container{
     margin-top: 540px;
     box-shadow: 5px 10px 35px 1px grey;
-    margin: 600px 20px 10px;
+    /* margin: 600px 20px 10px; */
+    margin: 20px;
 }
 .categories-head{
     margin: 5px 20px;
@@ -104,6 +98,9 @@ font-size: 25px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
+}
+.heading-card{
+    margin: 55px 0;
 }
 .cards{ 
     width: 150px;
@@ -152,4 +149,34 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
     transform: scale(1.1);
     transition: 0.5s ease-out;
     box-shadow: 0px 0px 25px rgb(111, 202, 241);
+}
+.randomPlace{
+    text-align: center;
+    margin: 55px;
+}
+.randomPlaceHead{
+    margin: 15px;
+}
+.randomPlaceImg{
+    margin: 50px;
+}
+.randomImg{
+    width: 50%;
+    box-shadow: 0px 0px 25px 10px rgb(124, 123, 123);
+}
+.randomPlaceName{
+    margin: 15px;
+}
+.btn-go{
+    font-size: 20px;
+    padding: 15px 40px;
+    border-radius: 15px 0px 15px 0px;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    cursor: pointer;
+}
+.btn-go:hover{
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+    box-shadow: 0px 0px 25px rgb(104, 105, 105);
 }

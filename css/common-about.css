@@ -23,6 +23,38 @@ body{
     margin: 10px;
     position: relative;
 }
+.profile-name {
+    text-align: left;
+
+    position: relative;
+    bottom: 30px;
+}
+.login-img {
+    
+}
+.but-n{
+    background-color: rgb(0, 53, 138);
+    margin-left: 63px ;
+    color: white ;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+ /* Small Devices */
+ @media screen and (max-width: 600px) {
+    .profile-card {
+        height: 150px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+        text-align: center;
+    }
+    .profile-pic {
+        margin-left: 16%;
+
 
 .profile-pic{
     height: 200px;
@@ -43,4 +75,23 @@ left: 20px;
 }
 .profile-name{
     text-align: center;
+
+/* Large Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .profile-card{
+        width: 200px;
+        height: 150px;
+        margin: -20px;
+        padding: 0px;
+        margin-top: -20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .profile-name{
+        font-size: 30px;
+    }
+    .profile-pic{
+        margin-top: -10px;
+    }
+    
 }

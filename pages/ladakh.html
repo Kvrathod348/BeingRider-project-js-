@@ -13,37 +13,40 @@
     <link rel="stylesheet" href="../css/ladakh.css">
 </head>
 
-<body>
-    <nav class="nav-bar">
+<body id="body">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/home/BeingRider(logo).png" alt="" class="logo">
+            </div>
+            <ul class="nav-links font-style">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="../pages/common-about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="swtich-btn">
+                <a href="../pages/login.html" class="login-btn font-style">LogIn <img src="../assets/home/bycicle.png"
+                        alt="" class="login-img"> </a>
 
-        <img src="../assets/home/BeingRider(logo).png" alt="" class="logo">
-
-        <div class="navbar-name-container">
-
-            <a href="../index.html" class="links"><span class="navbar-name font-style">Home</span></a>
-
-            <a href="#" class="links"><span class="navbar-name font-style">Place's</span></a>
-
-            <a href="#categories" class="links"><span class="navbar-name font-style">Categories</span></a>
-
-            <a href="" class="links"><span class="navbar-name font-style">Accesories</span></a>
-
-            <a href="../pages/common-about.html" class="links"><span class="navbar-name font-style">About</span></a>
-
-        </div>
-
-        <div class="swtich-btn">
-            <a href="./pages/login.html" class="login-btn font-style">LogIn <img src="../assets/home/bycicle.png" alt=""
-                    class="login-img"> </a>
-
-            <img src="../assets/home/sun.png" alt="" class="theme-btn" id="theme-btn">
+                <div class="moods">
+                    <img src="../assets/home/sun.png" alt="" class="theme-btn" id="icon-1" onclick="light()">
+                    <img src="../assets/home/moon.png" alt="" class="theme-btn" id="icon-2" onclick="dark()">
+                </div>
+            </div>
         </div>
     </nav>
 
 
-    <img src="../assets/ladakh/img1.png" alt="" class="head-img">
+    <img src="../assets/ladakh/plan-a-bike-trip-ladakh-india-1.jpg" alt="" class="head-img">
 
-    <h1 class="head-img-slogan font-style">Experience the Freedom of Riding</h1>
+
     <div class="search-container">
         <h1 class="head-search-box font-style">Explore Ladhak Best Spots</h1>
         <form action="" type="text">
@@ -76,9 +79,9 @@
     <div class="informaion-container-two">
         <h1 class="font-style">Map Details</h1>
         <div class="bike-title">
-            <h1 class=" bike-name font-style" id="description">BeingRider provide the Map an, Distance Details and
-                Co-ordinates </h1>
-            <p class="font-style" id="map-details">
+            <h2 class=" bike-name font-style" id="description">BeingRider provide the Map an, Distance Details and
+                Co-ordinates </h2>
+            <p class="font-style para-info" id="map-details">
             </p>
             <h3 class="font-style" id="co-ordinates">
             </h3>
@@ -112,7 +115,7 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
-    <footer>
+    <footer id="footer">
         <div class="footer-1">
             <div class="footer1-1">
                 <img src="../assets/home/BeingRider(logo).png" alt="" class="footer-img">
