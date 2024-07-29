@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/darjeeling-to-sikkim.css">
 </head>
@@ -57,17 +57,22 @@
         <form action="" type="text">
             <select name="text" id="input" class="search-box font-style">
 
-                <option>----</option>
+                <option>Kitchudumra Biodiversity Park</option>
+                <option>Samsing</option>
+                <option>Singla Tea Garden</option>
+                <option>Tukvar Tea Garden</option>
 
             </select>
+
         </form>
 
         <br>
         <button class="btn-search font-style" onclick="search()">Search</button>
         <div class="informaion-container">
             <div class="img-container">
-                <img src="../assets/home/search-starting.png" alt="" class="img-info" id="riderimg">
+                <img src="../assets/home/search-starting.png" style="object-fit: cover;" class="img-info" id="placeimg">
             </div>
+
             <div class="info">
                 <h2 class="heading-info font-style" id="spot-title">Hello Riders..!</h2>
                 <p class="para-info font-style" id="info">BeingRider is a platform for all the riders to explore the
@@ -163,9 +168,9 @@
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d227122.18861544412!2d88.12491193181067!3d27.19451864470523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x39e42e654cf501bb%3A0x4175555979d4702a!2sDarjeeling%2C%20West%20Bengal!3m2!1d27.0410218!2d88.2662745!4m5!1s0x39e6a56a5805eafb%3A0xa4c4b857c39b5a04!2sSikkim!3m2!1d27.351640699999997!2d88.3239309!5e0!3m2!1sen!2sin!4v1721482525916!5m2!1sen!2sin"
-            width="600" height="450" style="border-bottom:solid 25px #04AA6D;" allowfullscreen="" loading="lazy"
+            width="600" height="450" style="border:0" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="pass" style="border-bottom:solid 25px #04AA6D;">
+        <div class="pass">
 
             <p>Darjeeling Sikkim tour Package | Package cost |</p>
             <p> Itinerary
@@ -298,11 +303,42 @@
                     Drive back to hotel for lunch. Enjoy your evening at famous MG Marg in Gangtok.
                 </td>
             </tr>
-            </table>
+        </table>
 
     </div>
+    
+    <footer>
+        <div class="footer-1">
+            <div class="footer1-1">
+                <img src="./../assets/home/BeingRider(logo).png" alt="" class="footer-img">
+            </div>
+            <div class="footer1-1 font-style">
+                <h1 class="footer-link-tile ">Our Link</h1>
+                <span class="footer-link ">Home</span><br>
+                <span class="footer-link ">Product</span><br>
+                <span class="footer-link ">Review</span><br>
+                <a href="./../pages/common-about.html" class="links"><span class="footer-link ">About</span></a>
+            </div>
+    
+            <div class="footer1-1 font-style">
+                <h1 class="footer-link-tile">Help Center</h1>
+                <span class="footer-link ">FAQ</span><br>
+                <span class="footer-link ">Term of Use</span><br>
+                <span class="footer-link ">Privacy Policy</span><br>
+                <span class="footer-link ">Contact Support</span><br>
+            </div>
+    
+            <div class="footer1-1 font-style">
+                <h1 class="footer-link-tile">Contact</h1>
+                <a href="https://github.com/SakshiPawar19/BeingRider-project-js-" target="_blank"><img src="./../assets/home/github.png" alt="" class="footer-social-icon"></a>
+               <a href="https://www.instagram.com/sakshiii__1910?igsh=cGZkMTl2YnBuMXln" target="_blank"><img src="./../assets/home/instagram.png" alt="" class="footer-social-icon"></a> 
+               <img src="./../assets/home/twitter.png" alt="" class="footer-social-icon" >
+                <img src="./../assets/home/whatsapp.png" alt="" class="footer-social-icon">
+            </div>
+        </div>
+    </footer>
 
-
+    <script src="../js/darjeeling-to-sikkim.js"></script>
 </body>
 
 </html>
