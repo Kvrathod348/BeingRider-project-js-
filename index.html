@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeingRider🚵</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -32,9 +34,9 @@
                 <div class="line"></div>
             </div>
             <div class="swtich-btn">
-                <a href="./pages/login.html" class="login-btn font-style">LogIn <img src="./assets/home/bycicle.png" alt=""
-                        class="login-img"> </a>
-    
+                <a href="./pages/login.html" class="login-btn font-style">LogIn <img src="./assets/home/bycicle.png"
+                        alt="" class="login-img"> </a>
+
                 <div class="moods">
                     <img src="./assets/home/sun.png" alt="" class="theme-btn" id="icon-1" onclick="light()">
                     <img src="./assets/home/moon.png" alt="" class="theme-btn" id="icon-2" onclick="dark()">
@@ -47,6 +49,8 @@
     <img src="./assets/home/home poster.jpg" alt="" class="head-img">
 
     <h1 class="head-img-slogan font-style">Experience the Freedom of Riding</h1>
+
+
     <div class="search-container">
         <h1 class="head-search-box font-style">Explore The Adventure</h1>
         <form action="" type="text">
@@ -62,13 +66,15 @@
                 <option>Western Arunchal Pradesh</option>
             </select>
         </form>
-        <br>
         <button class="btn-search font-style" onclick="search()">Search</button>
-        <div class="informaion-container">
-            <div class="img-container">
-                <img src="./assets/home/search-starting.png" alt="" class="img-info" id="riderimg">
+        <div class="informaion-container" >
+            <div class="img-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+                <img src="./assets/home/plan-the-moter tour.jpeg" alt="" class="img-info" id="riderimg">
+
             </div>
-            <div class="info">
+
+            <div class="info" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h2 class="heading-info font-style" id="spot-title">Hello Riders..!</h2>
                 <p class="para-info font-style" id="info">BeingRider is a platform for all the riders to explore the
                     adventure. We provide you the best places to ride and the best bikes to ride. We also provide you
@@ -79,9 +85,13 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="informaion-container-two">
-        <h1 class="font-style">Which Bike is Best for Road Trip✨</h1>
-        <div class="bike-title">
+        <h1 class="font-style heading-info-2">Which Bike is Best for Road Trip✨</h1>
+
+        <div class="bike-title" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h1 class="bike-name font-style" id="bike-name">Discover new horizons on two wheels.</h1>
             <p class="font-style" id="accessories">
                 Baking is not just a culinary art; it's a heartfelt experience that brings joy, comfort, and
@@ -90,11 +100,14 @@
             </p>
 
         </div>
-        <div class="bike-img-container">
+        <div class="bike-img-container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="./assets/home/common-bike.jpeg" class="bike-img" id="bike-img">
         </div>
     </div>
-    <div class="categories-container font-style" id="categories">
+
+
+    <div class="categories-container font-style" id="categories" data-aos="fade-up"
+    data-aos-duration="3000">
         <h1 class="categories-head">
             Choose your Adventure Trip✨
         </h1>
@@ -157,7 +170,8 @@
         </div>
 
     </div>
-    <div class="img-change-container font style">
+    <div class="img-change-container font style" data-aos="fade-up"
+    data-aos-duration="3000">
         <h1 class="font-style heading-card" id="view-name">Bhur Ghat View 🤩</h1>
         <img src="./assets/home/home-pposter-3.jpg" alt="" class="spots-img" id="view-img">
     </div>
@@ -171,6 +185,26 @@
         <img src="./assets/home/home-poster-9.jpg" alt="spiti Valley" class="spot-img-changes" onclick="seven()">
         <img src="./assets/home/home-poster-10.jpeg" alt="Western Arunchal Pradesh" class="spot-img-changes"
             onclick="eigth()">
+    </div>
+
+    <div class="randomPlace">
+
+        <div class="randomPlacehead font-style">
+            <h1>
+                If you are confused then click here then we will suggest
+            </h1>
+        </div>
+
+        <div class="randomPlaceImg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <img src="./assets/home/plan-the-moter tour.jpeg" alt="" id="randomImg" class="randomImg">
+
+            <h2 class="font-style randomPlaceName" id="randomname"> Showing Advanture Your Destiny</h2>
+        </div>
+
+        <div class="font-style">
+            <button class="btn-go" onclick="go()">Let's Go😉</button>
+        </div>
+
     </div>
     <footer id="footer">
         <div class="footer-1">
@@ -206,6 +240,10 @@
     </footer>
 
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

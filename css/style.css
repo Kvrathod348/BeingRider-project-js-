@@ -14,12 +14,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     box-shadow: gray 0px 8px 15px;
     position: fixed;
     top: 0;
-    width: 100%;
     z-index: 1000;
+    width: 100%;
 }
 
 .container {
@@ -27,8 +26,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1500rem;
-    margin: 0 auto;
 }
 
 .nav-links {
@@ -64,15 +61,11 @@ body {
     transition: all 0.3s ease;
 }
 .font-style{
-    font-family: "Edu AU VIC WA NT Hand", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   }
-.nav-bar {
-   
 
-}
 
 .logo {
     width: 300px;
@@ -94,7 +87,7 @@ body {
     background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
     border-radius: 18px;
     border: solid 1px #565c5a;
-    padding: 5px 10px;
+    padding: 15px;
     cursor: pointer;
 }
 
@@ -116,7 +109,7 @@ body {
     cursor: pointer;
 }
 
-/* theme swticher */
+
 .active-one{
     filter: drop-shadow( 0px 0px 10px #fffbfb);
     border-radius: 35px;
@@ -147,10 +140,6 @@ body {
     color: #000000;
 }
 
-/*  */
-
-
-/* Search btn */
 .btn-search {
     background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     width: 120px;
@@ -175,10 +164,10 @@ body {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
-    margin: 80px 0px 0px 0px;   
+    width: 100%;   
 }
 .footer1-1{
-    margin: 30px 0;
+    margin:  0;
 }
 .footer-img {
     width: 350px;
@@ -190,6 +179,7 @@ body {
 }
 .footer-link-tile {
     font-size: 25px;
+    margin: 20px;
 } 
 .footer-social-icon {
     width: 50px;
@@ -211,7 +201,6 @@ body {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
         position: absolute;
         top: 70px;
         left: 0;
@@ -234,194 +223,5 @@ body {
         cursor: pointer;
         margin: 28px -50px 0px 0px;
     }
-    .logo {
-        width: 300px;
-    }
-    .swtich-btn {
-        width: 184px;
-        padding: 9px;
-        height: 83px;
-        margin: 55px -20px 0px 0px;
-    }
-    .moods{
-        width: 150px;
-        padding: 5px;
-        margin: -121px 0px 0px 12px;
-    }
-    .login-btn {
-        text-decoration: none;
-        background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-        border-radius: 18px;
-        border: solid 1px #565c5a;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-    
-    .theme-btn {
-        width: 45px;
-        margin: 15px 10px;
-        cursor: pointer;
-    }
-    
-    /* theme swticher */
-
-    .btn-search {
-        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-        width: 120px;
-        margin: 15px;
-        padding: 15px;
-        border-radius: 43px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .btn-search:hover {
-        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
-        box-shadow: rgb(8, 7, 7) 0px 0px 10px;
-        transition: 0.1s;
-        border: solid white 2px;
-        color: white;
-    }
-    
-    .footer-1 {
-        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center; 
-    }
-    .footer1-1{
-        margin: 30px 0;
-    }
-    .footer-img {
-        width: 350px;
-    }
-    .footer-link {
-        font-size: 15px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .footer-link-tile {
-        font-size: 25px;
-    } 
-    .footer-social-icon {
-        width: 50px;
-        margin: 8px;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-    
-    .footer-social-icon:hover {
-        box-shadow: #48fa69 0px 0px 25px;
-        transform: scale(1.1);
-        transition: 0.6s ease-in-out;
-    }
-}
-@media screen and (min-width:720px) and (max-width:920px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: #333;
-        transition: all 0.3s ease;
-    }
-
-    .nav-links.active {
-        display: flex;
-        margin: 100px 0px 0px 0px;;
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin: 28px -50px 0px 0px;
-    }
-    .logo {
-        width: 300px;
-    }
-    .swtich-btn {
-        width: 184px;
-        padding: 9px;
-        height: 83px;
-        margin: 55px -20px 0px 0px;
-    }
-    .moods{
-        width: 150px;
-        padding: 5px;
-        margin: -121px 0px 0px 12px;
-    }
-    .login-btn {
-        text-decoration: none;
-        background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-        border-radius: 18px;
-        border: solid 1px #565c5a;
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-    
-    .theme-btn {
-        width: 45px;
-        margin: 15px 10px;
-        cursor: pointer;
-    }
-    
-    /* theme swticher */
-
-    .btn-search {
-        background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-        width: 120px;
-        margin: 15px;
-        padding: 15px;
-        border-radius: 43px;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .btn-search:hover {
-        background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
-        box-shadow: rgb(8, 7, 7) 0px 0px 10px;
-        transition: 0.1s;
-        border: solid white 2px;
-        color: white;
-    }
-    
-    .footer-1 {
-        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center; 
-    }
-    .footer1-1{
-        margin: 30px 0;
-    }
-    .footer-img {
-        width: 350px;
-    }
-    .footer-link {
-        font-size: 15px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .footer-link-tile {
-        font-size: 25px;
-    } 
-    .footer-social-icon {
-        width: 50px;
-        margin: 8px;
-        cursor: pointer;
-        border-radius: 10px;
-    }
-    
-    .footer-social-icon:hover {
-        box-shadow: #48fa69 0px 0px 25px;
-        transform: scale(1.1);
-        transition: 0.6s ease-in-out;
-    }
+   
 }

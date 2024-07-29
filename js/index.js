@@ -7,10 +7,10 @@ hamburger.addEventListener('click', () => {
 
 // themme part
 
-function light(){
+function light() {
     const lightMood = document.getElementById('icon-1')
     lightMood.classList.add('active-one')
-     
+
     const darkMood = document.getElementById('icon-2')
     darkMood.classList.remove('active-two')
 
@@ -24,7 +24,8 @@ function light(){
     categorie.classList.remove('categories-box')
 
 }
-function dark(){
+
+function dark() {
     const darkMood = document.getElementById('icon-2')
     darkMood.classList.add('active-two')
 
@@ -32,7 +33,7 @@ function dark(){
     lightMood.classList.remove('active-one')
 
     const body = document.getElementById('body')
-    body.classList='bg-black'
+    body.classList = 'bg-black'
 
     const categories = document.getElementById('categories')
     categories.classList.add('categories-box')
@@ -40,7 +41,7 @@ function dark(){
     const categorie = document.getElementById('categorie')
     categorie.classList.add('categories-box')
 
-    const footerBox=document.getElementById('footer')
+    const footerBox = document.getElementById('footer')
     footerBox.classList.add('footer-box')
 }
 
@@ -118,23 +119,21 @@ function search() {
 
         case "Kerala Bike Trip":
             riderImg.src = './assets/home/kerala-bike-trip.png'
-            riderInfo.innerHTML = `
-            Munnar: Known
-            for its tea plantations, rolling hills, and scenic views.The ride through the winding roads offers a refreshing experience. < br >
+            riderInfo.innerHTML = `Munnar: Known
+            for its tea plantations, rolling hills, and scenic views.The ride through the winding roads offers a refreshing experience. <br>
                 Alleppey: Famous
-            for its backwaters, you can enjoy serene views of the waterways, lush green paddy fields, and traditional houseboats. < br >
-                Wayanad: This region is rich in biodiversity, with dense forests, waterfalls, and wildlife sanctuaries.The climb to places like Chembra Peak provides panoramic views. < br >
+            for its backwaters, you can enjoy serene views of the waterways, lush green paddy fields, and traditional houseboats. <br>
+                Wayanad: This region is rich in biodiversity, with dense forests, waterfalls, and wildlife sanctuaries.The climb to places like Chembra Peak provides panoramic views. <br>
                 Thekkady: Located near the Periyar Wildlife Sanctuary, this area is perfect
-            for spotting wildlife amidst beautiful natural settings. < br >
+            for spotting wildlife amidst beautiful natural settings. <br>
                 Varkala: Known
-            for its cliffs adjacent to the Arabian Sea, it provides stunning coastal views.
-            `
+            for its cliffs adjacent to the Arabian Sea, it provides stunning coastal views.`
             bikeName.innerHTML = `The Royal Enfield Himalayan is equipped with a fuel-injected 411cc single-cylinder engine, providing adequate power for both highway cruising and off-road maneuvering`
             accesories.innerHTML = `<h3 class="font-style">Accessories Needed:</h3>
                <ul class="bike-need font-style">
                 <li>Helmet: A high-quality helmet is crucial for safety. Ensure it meets safety standards and fits well .</li>
                 <li>Gloves: Protect your hands and provide better grip on the handlebars</li>
-                <li>Armoured Jacket and Pants: Provides protection in case of falls and keeps you warm in varying weather conditions [</li>
+                <li>Armoured Jacket and Pants: Provides protection in case of falls and keeps you warm in varying weather conditions </li>
                 <li>Boots: Choose durable, comfortable, and water-resistant boots suitable for long rides </li>
                 <li>Rain Gear: Includes waterproof jackets and pants to keep you dry during unexpected showers </li>
                </ul> `
@@ -145,19 +144,19 @@ function search() {
             riderInfo.innerHTML = `
             Ladakh is a popular destination
             for bike tours, offering a unique
-            blend of natural beauty, cultural experiences, and adventure. < br >
-                Some key highlights of a bike tour in Ladakh include: < br >
+            blend of natural beauty, cultural experiences, and adventure.<br>
+                Some key highlights of a bike tour in Ladakh include:<br>
                 1. High - altitude passes: The region is home to several high - altitude passes,
                 such as Khardung La, which offer breathtaking views of the surrounding
-            mountains and valleys. < br >
+            mountains and valleys. <br>
                 2. Monasteries: Ladakh is home to numerous monasteries, which offer
             insights into the region 's rich cultural heritage and spiritual traditions.<br>
             3. Wildlife: The region is home to a diverse range of wildlife, including
             snow leopards, blue sheep, and Himalayan ibex, making it a popular destination
-            for wildlife enthusiasts. < br >
+            for wildlife enthusiasts.<br>
                 4. Scenic landscapes: The region is known
             for its stunning landscapes,
-            including vast deserts, snow - capped mountains, and crystal - clear lakes. < br >
+            including vast deserts, snow - capped mountains, and crystal - clear lakes. <br>
                 5. Adventure activities: Ladakh offers a range of adventure activities,
                 such as trekking, mountain biking, and river rafting, making it a popular
             destination
@@ -181,30 +180,27 @@ function search() {
             Lonavala is a popular destination
             for bike tours in India, offering
             a range of scenic landscapes, cultural experiences, and adventure activities.
-            Some key highlights of a bike tour in Lonavala include: < br >
+            Some key highlights of a bike tour in Lonavala include:<br>
                 Scenic landscapes: The region is known
             for its rolling hills, lush green
             forests, and waterfalls, making it a popular destination
-            for nature lovers. <
-                ul >
-                <
-                li > Historical sites: The region is home to several historical sites, such as
+            for nature lovers. <ul>
+                <li> Historical sites: The region is home to several historical sites, such as
             the Bhaja Caves and the Karla Caves, which offer insights into the region 's
-            rich cultural heritage < /li> <
-                li > Adventure activities: Lonavala offers a range of adventure activities,
+            rich cultural heritage </li> 
+            <li> Adventure activities: Lonavala offers a range of adventure activities,
                 such as trekking, rock climbing, and rappelling, making it a popular destination
-            for adventure seekers. < /li> <
-                li > Wildlife: The region is home to a diverse range of wildlife, including
+            for adventure seekers. </li> 
+            <li> Wildlife: The region is home to a diverse range of wildlife, including
             leopards, langurs, and peacocks, making it a popular destination
             for wildlife
-            enthusiasts. < /li> <
-                li >
+            enthusiasts. </li> 
+            <li >
                 Cultural experiences: The region is home to several cultural experiences,
                 such as the Khandala Fair, which offers a glimpse into the region 's traditional
-            customs and practices. < /li>
+            customs and practices. </li>
 
-                <
-                /ul>`
+                </ul>`
             break;
 
         case "Spiti Valley":
@@ -238,61 +234,122 @@ Ziro Valley: Famous for its lush green landscapes and the unique Apatani tribal 
     spotName.innerText = "Area :" + searchInputValue;
 }
 
-function first(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
+function first() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
 
-    viewImage.src='./assets/home/home-pposter-3.jpg'
+    viewImage.src = './assets/home/home-pposter-3.jpg'
     viewName.innerText = 'Bhur Ghat View 🤩'
-    
-}
-function sec(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
 
-    viewImage.src='./assets/home/home-poster-4.jpg'
-    viewName.innerText = 'Bhutan Best View 🤩' 
-}
-function third(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-5.jpg'
-    viewName.innerText = 'Darjeeling Best View spot 🤩' 
-}
-function forth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-6.jpg'
-    viewName.innerText = 'Kerala Best View Spot 💖' 
-}
-function fifth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-7.jpg'
-    viewName.innerText = 'Ladakh  View 🤩' 
-}
-function sixth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-8.jpg'
-    viewName.innerText = 'Lonavala Best View 😍' 
-}
-function seven(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-9.jpg'
-    viewName.innerText = 'Spiti Valley best View 💖' 
-}
-function eigth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-10.jpeg'
-    viewName.innerText = 'Western Arunchal Pradesh View 🤩' 
 }
 
+function sec() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-4.jpg'
+    viewName.innerText = 'Bhutan Best View 🤩'
+}
+
+function third() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-5.jpg'
+    viewName.innerText = 'Darjeeling Best View spot 🤩'
+}
+
+function forth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-6.jpg'
+    viewName.innerText = 'Kerala Best View Spot 💖'
+}
+
+function fifth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-7.jpg'
+    viewName.innerText = 'Ladakh  View 🤩'
+}
+
+function sixth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-8.jpg'
+    viewName.innerText = 'Lonavala Best View 😍'
+}
+
+function seven() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-9.jpg'
+    viewName.innerText = 'Spiti Valley best View 💖'
+}
+
+function eigth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-10.jpeg'
+    viewName.innerText = 'Western Arunchal Pradesh View 🤩'
+}
+
+function go() {
+    const min = 0
+    const max = 7
+
+    const randomNumber = Math.round(Math.random() * (max - min) + min);
+    console.log(randomNumber);
+
+    const placeName = ['Bhor Ghat', 'Bhutan', 'Darjeeling to Sikkim', 'Kerala', 'Ladakh', 'Lonavala', 'Spiti Valley', 'Western Arunachal Pradesh']
+
+    const randomName = document.getElementById('randomname')
+
+    switch (randomNumber) {
+        case 1:
+            randomImg.src = './assets/home/bhor-ghat.jpg'
+            randomName.innerText = ` ${placeName[0]} Awesome PLace 😍`
+
+            break;
+
+        case 2:
+            randomImg.src = './assets/home/bhutan.jpg'
+            randomName.innerText = ` ${placeName[1]} Nature incredible view  😍`
+            break;
+
+        case 3:
+            randomImg.src = './assets/home/darjeeling-sikkim.jpg'
+            randomName.innerText = ` ${placeName[2]} Snowing Mountains view ☃️❄️`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/kerala-bike-trip.png'
+            randomName.innerText = ` ${placeName[3]} Vibes are Amazing Nature and Lakes🌄`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/ladakh.jpg'
+            randomName.innerText = ` ${placeName[4]} mountain abonded Road specially of introvert and QuitPlace😁 `
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/lonavala.jpg'
+            randomName.innerText = ` ${placeName[5]} Rainy Mounsoon View 😍`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/spiti-valley.jpg'
+            randomName.innerText = ` ${placeName[6]} Flower,s Garden and Awesome PLace 😍`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/western-arunchal-pradesh.jpeg'
+            randomName.innerText = ` ${placeName[7]} Snowing Mountains view ☃️❄️`
+            break;
+    }
+}
