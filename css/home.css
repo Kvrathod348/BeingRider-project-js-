@@ -162,6 +162,7 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
 }
 .randomImg{
     width: 50%;
+    object-fit: cover;
     box-shadow: 0px 0px 25px 10px rgb(124, 123, 123);
 }
 .randomPlaceName{

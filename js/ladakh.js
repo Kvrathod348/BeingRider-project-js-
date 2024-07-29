@@ -123,3 +123,40 @@ map.innerHTML= `<iframe class="map" src="https://www.google.com/maps/embed?pb=!1
     spotName.innerText = "Spot : " + searchInputValue;
 
 }
+const offerPoster= ['../assets/ladakh/accesoriesone.jpg',
+    '../assets/ladakh/postertwo.png',
+    '../assets/ladakh/posterthree.jpg',
+    '../assets/ladakh/posterfour.jpg'];
+
+    let offerImgIndex = 0;
+
+function left(){
+    
+        if(offerImgIndex==0){
+
+            offerImgIndex = offerPoster.length - 1;
+        }
+        else{
+            offerImgIndex--;
+        }
+
+        const offerPosterImg=document.getElementById('accesories-poster')
+
+        offerPosterImg.src= offerPoster[offerImgIndex];
+}
+
+function right(){
+  
+
+    if(offerImgIndex == offerPoster.length - 1){
+
+        offerImgIndex = 0;
+    }
+    else{
+        offerImgIndex++;
+    }
+    const offerPosterImg=document.getElementById('accesories-poster')
+
+        offerPosterImg.src= offerPoster[offerImgIndex];
+}
+

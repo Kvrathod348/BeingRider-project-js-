@@ -96,6 +96,28 @@ font-size: 25px;
 .footer-box{
     color: #000000;
 }
+.offerPoster{
+    width: 100%;
+    height: 25rem;
+    margin: 132px auto;
+    object-fit: cover;
+}
+.slidBtn{
+    margin: -350px 0px 200px 0px;
+}
+.slidBtn1{
+    margin: 0px 1416px 0px 0px;
+    width: 3rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 10px rgb(206, 203, 203);
+    border-radius: 15px;
+}
+.slidBtn2{
+    width: 3rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 25px 10px rgb(206, 203, 203);
+    border-radius: 15px;
+}
 @media screen and (max-width:600px){
 
 }
