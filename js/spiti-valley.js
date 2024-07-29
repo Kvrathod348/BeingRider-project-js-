@@ -50,6 +50,7 @@ function changeImg(num) {
     if (num == 1) {
         mainImg.src = "./../assets/spiti-valley/full-set.webp"
         buttonName.innerHTML = '<a href="https://m.vffshop.top/products.aspx?cname=bike+riding+full+kit+price&cid=42&url=www.ilcascinone.com" class="img-name font-style" target="_blank" id="product-link">Full Set</a>'
+        
     }
     else if (num == 2) {
         mainImg.src = "./../assets/spiti-valley/helmet.jpg"

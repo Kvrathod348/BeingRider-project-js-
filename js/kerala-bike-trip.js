@@ -10,4 +10,10 @@ function searchResult() {
 
     const option = inputOption.value
 
+    
+function changeImg(num) {
+    const mainImg = document.getElementById("head-image")
+    const buttonName = document.getElementById("head-product")
 }
+
+    
