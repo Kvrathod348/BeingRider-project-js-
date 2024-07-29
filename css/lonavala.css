@@ -78,9 +78,10 @@ body {
 
 .theme-btn {
     width: 50px;
-    margin: -14px 29px;
+    margin: -13px 29px;
     cursor: pointer;
 }
+
 
 .head-img{
     width: 100%;
@@ -231,11 +232,11 @@ body {
         border-radius: 10px;
         cursor: pointer;
     }
-    .sub-acc:hover{
+    /* .sub-acc:hover{
         border-radius: 20px;
         transition: 1s;
         width: 100px;
-    }
+    } */
     
     .sub-imgs {
         display: flex;
