@@ -42,7 +42,7 @@ height: 30rem;
     border-radius: 25px;
 }
 .info{
-    width: 718px;
+    width: 634px;
     margin: -440px 0px 140px 785px;
 }
 .heading-info{
@@ -54,7 +54,7 @@ margin: 25px;
     text-align: left;
 }
 .informaion-container-two{
-    width: 85rem;
+    width: 89rem;
     margin: 50px auto;
     text-align: center;
 }
@@ -162,6 +162,7 @@ box-shadow: 0px 0px 50px 10px rgb(136, 134, 134);
 }
 .randomImg{
     width: 50%;
+    box-shadow: 0px 0px 25px 10px rgb(124, 123, 123);
 }
 .randomPlaceName{
     margin: 15px;
