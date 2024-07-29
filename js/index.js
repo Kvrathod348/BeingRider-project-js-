@@ -7,10 +7,10 @@ hamburger.addEventListener('click', () => {
 
 // themme part
 
-function light(){
+function light() {
     const lightMood = document.getElementById('icon-1')
     lightMood.classList.add('active-one')
-     
+
     const darkMood = document.getElementById('icon-2')
     darkMood.classList.remove('active-two')
 
@@ -24,7 +24,8 @@ function light(){
     categorie.classList.remove('categories-box')
 
 }
-function dark(){
+
+function dark() {
     const darkMood = document.getElementById('icon-2')
     darkMood.classList.add('active-two')
 
@@ -32,7 +33,7 @@ function dark(){
     lightMood.classList.remove('active-one')
 
     const body = document.getElementById('body')
-    body.classList='bg-black'
+    body.classList = 'bg-black'
 
     const categories = document.getElementById('categories')
     categories.classList.add('categories-box')
@@ -40,7 +41,7 @@ function dark(){
     const categorie = document.getElementById('categorie')
     categorie.classList.add('categories-box')
 
-    const footerBox=document.getElementById('footer')
+    const footerBox = document.getElementById('footer')
     footerBox.classList.add('footer-box')
 }
 
@@ -233,61 +234,122 @@ Ziro Valley: Famous for its lush green landscapes and the unique Apatani tribal 
     spotName.innerText = "Area :" + searchInputValue;
 }
 
-function first(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
+function first() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
 
-    viewImage.src='./assets/home/home-pposter-3.jpg'
+    viewImage.src = './assets/home/home-pposter-3.jpg'
     viewName.innerText = 'Bhur Ghat View 🤩'
-    
-}
-function sec(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
 
-    viewImage.src='./assets/home/home-poster-4.jpg'
-    viewName.innerText = 'Bhutan Best View 🤩' 
-}
-function third(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-5.jpg'
-    viewName.innerText = 'Darjeeling Best View spot 🤩' 
-}
-function forth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-6.jpg'
-    viewName.innerText = 'Kerala Best View Spot 💖' 
-}
-function fifth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-7.jpg'
-    viewName.innerText = 'Ladakh  View 🤩' 
-}
-function sixth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-8.jpg'
-    viewName.innerText = 'Lonavala Best View 😍' 
-}
-function seven(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-9.jpg'
-    viewName.innerText = 'Spiti Valley best View 💖' 
-}
-function eigth(){
-    const viewImage=document.getElementById('view-img')
-    const viewName=document.getElementById('view-name')
-
-    viewImage.src='./assets/home/home-poster-10.jpeg'
-    viewName.innerText = 'Western Arunchal Pradesh View 🤩' 
 }
 
+function sec() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-4.jpg'
+    viewName.innerText = 'Bhutan Best View 🤩'
+}
+
+function third() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-5.jpg'
+    viewName.innerText = 'Darjeeling Best View spot 🤩'
+}
+
+function forth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-6.jpg'
+    viewName.innerText = 'Kerala Best View Spot 💖'
+}
+
+function fifth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-7.jpg'
+    viewName.innerText = 'Ladakh  View 🤩'
+}
+
+function sixth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-8.jpg'
+    viewName.innerText = 'Lonavala Best View 😍'
+}
+
+function seven() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-9.jpg'
+    viewName.innerText = 'Spiti Valley best View 💖'
+}
+
+function eigth() {
+    const viewImage = document.getElementById('view-img')
+    const viewName = document.getElementById('view-name')
+
+    viewImage.src = './assets/home/home-poster-10.jpeg'
+    viewName.innerText = 'Western Arunchal Pradesh View 🤩'
+}
+
+function go() {
+    const min = 0
+    const max = 7
+
+    const randomNumber = Math.round(Math.random() * (max - min) + min);
+    console.log(randomNumber);
+
+    const placeName = ['Bhor Ghat', 'Bhutan', 'Darjeeling to Sikkim', 'Kerala', 'Ladakh', 'Lonavala', 'Spiti Valley', 'Western Arunachal Pradesh']
+
+    const randomName = document.getElementById('randomname')
+
+    switch (randomNumber) {
+        case 1:
+            randomImg.src = './assets/home/bhor-ghat.jpg'
+            randomName.innerText = ` ${placeName[0]} Awesome PLace 😍`
+
+            break;
+
+        case 2:
+            randomImg.src = './assets/home/bhutan.jpg'
+            randomName.innerText = ` ${placeName[1]} Nature incredible view  😍`
+            break;
+
+        case 3:
+            randomImg.src = './assets/home/darjeeling-sikkim.jpg'
+            randomName.innerText = ` ${placeName[2]} Snowing Mountains view ☃️❄️`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/kerala-bike-trip.png'
+            randomName.innerText = ` ${placeName[3]} Vibes are Amazing Nature and Lakes🌄`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/ladakh.jpg'
+            randomName.innerText = ` ${placeName[4]} mountain abonded Road specially of introvert and QuitPlace😁 `
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/lonavala.jpg'
+            randomName.innerText = ` ${placeName[5]} Rainy Mounsoon View 😍`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/spiti-valley.jpg'
+            randomName.innerText = ` ${placeName[6]} Flower,s Garden and Awesome PLace 😍`
+            break;
+
+        case 4:
+            randomImg.src = './assets/home/western-arunchal-pradesh.jpeg'
+            randomName.innerText = ` ${placeName[7]} Snowing Mountains view ☃️❄️`
+            break;
+    }
+}
