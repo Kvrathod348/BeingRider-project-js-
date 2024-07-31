@@ -7,45 +7,65 @@ hamburger.addEventListener('click', () => {
 
 // themme part
 
-function light() {
-    const lightMood = document.getElementById('icon-1')
-    lightMood.classList.add('active-one')
+// function light() {
+//     const lightMood = document.getElementById('icon-1')
+//     lightMood.classList.add('active-one')
 
-    const darkMood = document.getElementById('icon-2')
-    darkMood.classList.remove('active-two')
+//     const darkMood = document.getElementById('icon-2')
+//     darkMood.classList.remove('active-two')
 
-    const body = document.getElementById('body')
-    body.classList = 'bg-light'
+//     const body = document.getElementById('body')
+//     body.classList = 'bg-light'
 
-    const categories = document.getElementById('categories')
-    categories.classList.remove('categories-box')
+//     const categories = document.getElementById('categories')
+//     categories.classList.remove('categories-box')
 
-    const categorie = document.getElementById('categorie')
-    categorie.classList.remove('categories-box')
+//     const categorie = document.getElementById('categorie')
+//     categorie.classList.remove('categories-box')
 
-}
+// }
 
-function dark() {
-    const darkMood = document.getElementById('icon-2')
-    darkMood.classList.add('active-two')
+// function dark() {
+//     const darkMood = document.getElementById('icon-2')
+//     darkMood.classList.add('active-two')
 
-    const lightMood = document.getElementById('icon-1')
-    lightMood.classList.remove('active-one')
+//     const lightMood = document.getElementById('icon-1')
+//     lightMood.classList.remove('active-one')
 
-    const body = document.getElementById('body')
-    body.classList = 'bg-black'
+//     const body = document.getElementById('body')
+//     body.classList = 'bg-black'
 
-    const categories = document.getElementById('categories')
-    categories.classList.add('categories-box')
+//     const categories = document.getElementById('categories')
+//     categories.classList.add('categories-box')
 
-    const categorie = document.getElementById('categorie')
-    categorie.classList.add('categories-box')
+//     const categorie = document.getElementById('categorie')
+//     categorie.classList.add('categories-box')
 
-    const footerBox = document.getElementById('footer')
-    footerBox.classList.add('footer-box')
-}
+//     const footerBox = document.getElementById('footer')
+//     footerBox.classList.add('footer-box')
+// }
 
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
 
+themeIcon.addEventListener('click', () => {
+    if (body.classList.contains('bg-black')) {
+        body.classList.remove('bg-black');
+        body.classList.add('bg-light');
+        themeIcon.classList.add('active-one')
+        themeIcon.src = './assets/home/moon.png';
+        body.style.transition='2s';
+    } else {
+        body.classList.remove('bg-light');
+        body.classList.add('bg-black');
+        categories.classList.add('categories-box')
+        categorie.classList.add('categories-box')
+        footer.classList.add('footer-box')
+        themeIcon.classList.add('active-one');
+        themeIcon.src = './assets/home/sun.png';
+        body.style.transition='2s';
+    }
+});
 
 
 function search() {
