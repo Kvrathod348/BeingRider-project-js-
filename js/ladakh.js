@@ -8,10 +8,10 @@ hamburger.addEventListener('click', () => {
 // themme part
 
 
-function light(){
+function light() {
     const lightMood = document.getElementById('icon-1')
     lightMood.classList.add('active-one')
-     
+
     const darkMood = document.getElementById('icon-2')
     darkMood.classList.remove('active-two')
 
@@ -19,7 +19,8 @@ function light(){
     categorie.classList.remove('categories-box')
 
 }
-function dark(){
+
+function dark() {
     const darkMood = document.getElementById('icon-2')
     darkMood.classList.add('active-two')
 
@@ -27,9 +28,9 @@ function dark(){
     lightMood.classList.remove('active-one')
 
     const body = document.getElementById('body')
-    body.classList='bg-black'
+    body.classList = 'bg-black'
 
-    const footerBox=document.getElementById('footer')
+    const footerBox = document.getElementById('footer')
     footerBox.classList.add('footer-box')
 }
 
@@ -80,13 +81,13 @@ the Leh district, in the Indian state of Jammu and Kashmir. It is nine stories h
 the upper floors of the palace were used by the royal family and the lower floors stored grain and hay
 `
             mapDetails.innerHTML = `Former royal palace situated on top of a mountain, accessible by hike with picturesque city views.`
-           mapLocation.innerHTML = `Co-ordinates: <br> 34.16617357109787, 77.58653028039274`
+            mapLocation.innerHTML = `Co-ordinates: <br> 34.16617357109787, 77.58653028039274`
             map.innerHTML = `<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.232114536028!2d77.58399827518197!3d34.16598271171695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38fdeb150c993295%3A0xc41a8d83a5a327e6!2sLeh%20Palace!5e0!3m2!1sen!2sin!4v1721565840992!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
             break;
 
         case "Pangong Tso":
             imgPlace.src = '../assets/ladakh/pangong-tso.jpg'
-            namePlace.innerHTML= `Pangong Tso, also known as Pangong Lake, is a famous lake in Ladakh, India. The lake's name comes from the Tibetan word Pangong Tso, which means "high grassland lake". It's known for its many special features, including:
+            namePlace.innerHTML = `Pangong Tso, also known as Pangong Lake, is a famous lake in Ladakh, India. The lake's name comes from the Tibetan word Pangong Tso, which means "high grassland lake". It's known for its many special features, including:
 Changing colors<br>
 The lake's color can change depending on the weather and the angle of the sunlight, appearing in shades of blue, green, and sometimes red.<br>
 Frozen land <br>
@@ -95,10 +96,10 @@ Highest salt water lake <br>
 Pangong Tso is the highest salt water lake in the world and extends into Tibet. <br>
 Brackish water <br>
 The lake's water is brackish and has low micro-vegetation. Guides say there are no fish or other aquatic life in the lake, but visitors often see ducks and gulls.`
-descriptionPlace.innerHTML= `The Pangong Tso Lake is a breeding ground for different types of birds, including migratory ones. During the summer, the bar-headed goose and Brahminy Ducks are commonly spotted. Fishes such as False Osman and Kunar Snow Trout reside in the lake.`
-mapDetails.innerHTML = `Remote, closed-basin lake in the Himalayas featuring brackish water migrating birds & more.`
- mapLocation.innerHTML = `Co-ordinates: <br> 34.16617357109787, 77.58653028039274`
-map.innerHTML= `<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212135.36608155147!2d78.5587766923561!3d33.82224473838094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39002d69b6082a97%3A0xb7ba17e3c8c016a9!2sPangong%20Tso!5e0!3m2!1sen!2sin!4v1721594765522!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+            descriptionPlace.innerHTML = `The Pangong Tso Lake is a breeding ground for different types of birds, including migratory ones. During the summer, the bar-headed goose and Brahminy Ducks are commonly spotted. Fishes such as False Osman and Kunar Snow Trout reside in the lake.`
+            mapDetails.innerHTML = `Remote, closed-basin lake in the Himalayas featuring brackish water migrating birds & more.`
+            mapLocation.innerHTML = `Co-ordinates: <br> 34.16617357109787, 77.58653028039274`
+            map.innerHTML = `<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212135.36608155147!2d78.5587766923561!3d33.82224473838094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39002d69b6082a97%3A0xb7ba17e3c8c016a9!2sPangong%20Tso!5e0!3m2!1sen!2sin!4v1721594765522!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
             break;
 
 
@@ -123,40 +124,39 @@ map.innerHTML= `<iframe class="map" src="https://www.google.com/maps/embed?pb=!1
     spotName.innerText = "Spot : " + searchInputValue;
 
 }
-const offerPoster= ['../assets/ladakh/accesoriesone.jpg',
+const offerPoster = [
+    '../assets/ladakh/accesoriesone.jpg',
     '../assets/ladakh/postertwo.png',
     '../assets/ladakh/posterthree.jpg',
-    '../assets/ladakh/posterfour.jpg'];
+    '../assets/ladakh/posterfour.jpg'
+];
 
-    let offerImgIndex = 0;
+let offerImgIndex = 0;
 
-function left(){
-    
-        if(offerImgIndex==0){
+function left() {
 
-            offerImgIndex = offerPoster.length - 1;
-        }
-        else{
-            offerImgIndex--;
-        }
+    if (offerImgIndex == 0) {
 
-        const offerPosterImg=document.getElementById('accesories-poster')
+        offerImgIndex = offerPoster.length - 1;
+    } else {
+        offerImgIndex--;
+    }
 
-        offerPosterImg.src= offerPoster[offerImgIndex];
+    const offerPosterImg = document.getElementById('accesories-poster')
+
+    offerPosterImg.src = offerPoster[offerImgIndex];
 }
 
-function right(){
-  
+function right() {
 
-    if(offerImgIndex == offerPoster.length - 1){
+
+    if (offerImgIndex == offerPoster.length - 1) {
 
         offerImgIndex = 0;
-    }
-    else{
+    } else {
         offerImgIndex++;
     }
-    const offerPosterImg=document.getElementById('accesories-poster')
+    const offerPosterImg = document.getElementById('accesories-poster')
 
-        offerPosterImg.src= offerPoster[offerImgIndex];
+    offerPosterImg.src = offerPoster[offerImgIndex];
 }
-

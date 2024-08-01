@@ -5,46 +5,6 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-// themme part
-
-// function light() {
-//     const lightMood = document.getElementById('icon-1')
-//     lightMood.classList.add('active-one')
-
-//     const darkMood = document.getElementById('icon-2')
-//     darkMood.classList.remove('active-two')
-
-//     const body = document.getElementById('body')
-//     body.classList = 'bg-light'
-
-//     const categories = document.getElementById('categories')
-//     categories.classList.remove('categories-box')
-
-//     const categorie = document.getElementById('categorie')
-//     categorie.classList.remove('categories-box')
-
-// }
-
-// function dark() {
-//     const darkMood = document.getElementById('icon-2')
-//     darkMood.classList.add('active-two')
-
-//     const lightMood = document.getElementById('icon-1')
-//     lightMood.classList.remove('active-one')
-
-//     const body = document.getElementById('body')
-//     body.classList = 'bg-black'
-
-//     const categories = document.getElementById('categories')
-//     categories.classList.add('categories-box')
-
-//     const categorie = document.getElementById('categorie')
-//     categorie.classList.add('categories-box')
-
-//     const footerBox = document.getElementById('footer')
-//     footerBox.classList.add('footer-box')
-// }
-
 const themeIcon = document.getElementById('theme-icon');
 const body = document.body;
 
@@ -54,7 +14,7 @@ themeIcon.addEventListener('click', () => {
         body.classList.add('bg-light');
         themeIcon.classList.add('active-one')
         themeIcon.src = './assets/home/moon.png';
-        body.style.transition='2s';
+        body.style.transition = '2s';
     } else {
         body.classList.remove('bg-light');
         body.classList.add('bg-black');
@@ -63,19 +23,21 @@ themeIcon.addEventListener('click', () => {
         footer.classList.add('footer-box')
         themeIcon.classList.add('active-one');
         themeIcon.src = './assets/home/sun.png';
-        body.style.transition='2s';
-    }
+        body.style.transition = '2s';
+    }
 });
 
 
 function search() {
     const searchInput = document.getElementById('input')
     const searchInputValue = searchInput.value;
+
     const riderImg = document.getElementById('riderimg')
     const riderInfo = document.getElementById('info')
 
     const bikeName = document.getElementById('bike-name')
     const bikeImg = document.getElementById('bike-img')
+
     const accesories = document.getElementById('accessories')
 
     switch (searchInputValue) {
@@ -320,56 +282,98 @@ function eigth() {
 }
 
 function go() {
-    const min = 0
-    const max = 7
+    const areaNames = [
+        'Bhor Ghat',
+        'Bhutan',
+        'Darjeeling to Sikkim',
+        'Kerala',
+        'Ladakh',
+        'Lonavala',
+        'Spiti Valley',
+        'Western Arunachal Pradesh'
+    ]
 
-    const randomNumber = Math.round(Math.random() * (max - min) + min);
-    console.log(randomNumber);
+    const min = 0;
+    const max = areaNames.length - 1;
 
-    const placeName = ['Bhor Ghat', 'Bhutan', 'Darjeeling to Sikkim', 'Kerala', 'Ladakh', 'Lonavala', 'Spiti Valley', 'Western Arunachal Pradesh']
+    const randomIndex = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(randomIndex);
 
-    const randomName = document.getElementById('randomname')
+    const randomImgElement = document.getElementById('random-img');
+    const randomNameElement = document.getElementById('random-name')
 
-    switch (randomNumber) {
-        case 1:
-            randomImg.src = './assets/home/bhor-ghat.jpg'
-            randomName.innerText = ` ${placeName[0]} Awesome PLace 😍`
+
+    switch (randomIndex) {
+        case 0:
+            const bhorImageshow = [
+                './assets/home/bhor-ghat.jpg',
+                './assets/home/bhor-ghat-1.jpg',
+                './assets/home/bhor-ghat-2.jpg',
+                './assets/home/bhor-ghat-3.jpg',
+                './assets/home/bhor-ghat-4.jpg'
+            ]
+            const placeName = [
+                'Bhor Ghat',
+                'Amazing Ghat',
+                'Beautiful Hill',
+                'Gorgeous Valley',
+                'Stunning Scenery'
+            ];
+            for (let area of areaNames) {
+                if (bhorImageshow[randomIndex]) {
+                    let currentImageIndex = 0;
+                    const imageArray = bhorImageshow[randomIndex];
+                    const nameArray = placeName[randomIndex];
+
+                    function changeRandomImage() {
+                        randomImgElement.src = imageArray[currentImageIndex];
+                        randomNameElement.innerText = `${areaNames[currentImageIndex]} - Awesome Place 😍`;
+                        currentImageIndex = (currentImageIndex + 1) % imageArray.length;
+                    }
+
+                    setInterval(changeRandomImage, 2000);
+                    changeRandomImage();
+                } else {
+                    randomImgElement.src = './assets/home/bhor-ghat.jpg';
+                    randomNameElement.innerText = 'Default Place - Awesome Place 😍';
+                }
+            }
 
             break;
 
-        case 2:
-            randomImg.src = './assets/home/bhutan.jpg'
-            randomName.innerText = ` ${placeName[1]} Nature incredible view  😍`
-            break;
+    case 1:
+        randomImgElement.src = './assets/home/bhutan.jpg'
+        randomNameElement.innerText = ` ${areaNames[1]} Nature incredible view  😍`
+    break;
 
-        case 3:
-            randomImg.src = './assets/home/darjeeling-sikkim.jpg'
-            randomName.innerText = ` ${placeName[2]} Snowing Mountains view ☃️❄️`
-            break;
+    case 2:
+        randomImgElement.src = './assets/home/darjeeling-sikkim.jpg'
+        randomNameElement.innerText = ` ${areaNames[2]} Snowing Mountains view ☃️❄️`
+    break;
 
-        case 4:
-            randomImg.src = './assets/home/kerala-bike-trip.png'
-            randomName.innerText = ` ${placeName[3]} Vibes are Amazing Nature and Lakes🌄`
-            break;
+    case 3:
+        randomImgElement.src = './assets/home/kerala-bike-trip.png'
+        randomNameElement.innerText = ` ${areaNames[3]} Vibes are Amazing Nature and Lakes🌄`
+    break;
 
-        case 4:
-            randomImg.src = './assets/home/ladakh.jpg'
-            randomName.innerText = ` ${placeName[4]} mountain abonded Road specially of introvert and QuitPlace😁 `
-            break;
+    case 4:
+        randomImgElement.src = './assets/home/ladakh.jpg'
+        randomNameElement.innerText = ` ${areaNames[4]} mountain abonded Road specially of introvert and QuitPlace😁 `
+    break;
 
-        case 4:
-            randomImg.src = './assets/home/lonavala.jpg'
-            randomName.innerText = ` ${placeName[5]} Rainy Mounsoon View 😍`
-            break;
+    case 5:
+        randomImgElement.src = './assets/home/lonavala.jpg'
+        randomNameElement.innerText = ` ${areaNames[5]} Rainy Mounsoon View 😍`
+    break;
 
-        case 4:
-            randomImg.src = './assets/home/spiti-valley.jpg'
-            randomName.innerText = ` ${placeName[6]} Flower,s Garden and Awesome PLace 😍`
-            break;
+    case 6:
+        randomImgElement.src = './assets/home/spiti-valley.jpg'
+        randomNameElement.innerText = ` ${areaNames[6]} Flower,s Garden and Awesome PLace 😍`
+    break;
 
-        case 4:
-            randomImg.src = './assets/home/western-arunchal-pradesh.jpeg'
-            randomName.innerText = ` ${placeName[7]} Snowing Mountains view ☃️❄️`
-            break;
-    }
+    case 7:
+        randomImgElement.src = './assets/home/western-arunchal-pradesh.jpg'
+        randomNameElement.innerText = ` ${areaNames[7]} Snowing Mountains view ☃️❄️`
+    break;
+}
 }
