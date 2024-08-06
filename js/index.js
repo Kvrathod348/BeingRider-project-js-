@@ -284,10 +284,10 @@ function eigth() {
 function go() {
     const areaNames = [
         'Bhor Ghat',
-        'Bhutan',
+        'Rajasthan',
         'Darjeeling to Sikkim',
         'Kerala',
-        'Ladakh',
+        'Ladakh', 
         'Lonavala',
         'Spiti Valley',
         'Western Arunachal Pradesh'
@@ -302,44 +302,54 @@ function go() {
     const randomImgElement = document.getElementById('random-img');
     const randomNameElement = document.getElementById('random-name')
 
+    const bhorImageshow = [
+        './assets/home/bhor-ghat.jpg',
+        './assets/home/bhor-ghat-1.jpg',
+        './assets/home/bhor-ghat-2.jpg',
+        './assets/home/bhor-ghat-3.jpg',
+        './assets/home/bhor-ghat-4.jpg'
+    ]
+    const bhorPlaceName = [
+        'Bhor Ghat  Place 😍',
+        'Gorgeous Valley  Place 😉',
+        'Beautiful Hill view on Train journey ✨',
+        'Bhor Khandala ghat Place 🚵',
+        'Stunning sunset Place Bhor Ghat 💖'
+    ];
+    
+    const rajasthanImageShow=[
+        './assets/home/rajashan.jpg',
+        './assets/home/rajashan-1.jpg',
+        './assets/home/rajashan-2.jpg',
+        './assets/home/rajashan-3.jpg',
+        './assets/home/rajashan-4.jpg'  
+    ]
+    const rajasthanPlaceName = [
+      'Rajasthan – The Great Indian Thar Desert.',
+      'Pushkar Camel Fair Experience the cultural extravaganza of the Pushkar ',
+      'Lake Pichola Experience the ethereal beauty of Lake Pichola',
+      'Jaisalmer Fort Marvel at the architectural marvel of Jaisalmer Fort',
+      'Alwar Fort Ascend to the towering heights of Alwar Fort and explore its ancient ramparts'
+    ];
 
+    const darjeelingImageShow=[
+        './assets/home/darjeeling.jpg',
+        './assets/home/dar.jpg',
+        './assets/home/darjeeling-2.jpg',
+        './assets/home/darjeeling-3.jpg',
+        './assets/home/darjeeling-4.jpg'
+    ]
+    const darjeelingPlaceName = [
+        'Darjeeling  The Queen of the Hills',
+        'Batasia Loop A lush green toy train pathway with panoramic views of Darjeeling',
+        'Zero Point The last point on the Indo-China border at an altitude of 15,600 ft',
+        'Thambi View Point Offers a complete look of the loops',
+        'Pelling  The Land of holy lakes, monasteries, and pristine landscapes'
+    ]
     switch (randomIndex) {
         case 0:
-            const bhorImageshow = [
-                './assets/home/bhor-ghat.jpg',
-                './assets/home/bhor-ghat-1.jpg',
-                './assets/home/bhor-ghat-2.jpg',
-                './assets/home/bhor-ghat-3.jpg',
-                './assets/home/bhor-ghat-4.jpg'
-            ]
-            const placeName = [
-                'Bhor Ghat',
-                'Amazing Ghat',
-                'Beautiful Hill',
-                'Gorgeous Valley',
-                'Stunning Scenery'
-            ];
-            for (let area of areaNames) {
-                if (bhorImageshow[randomIndex]) {
-                    let currentImageIndex = 0;
-                    const imageArray = bhorImageshow[randomIndex];
-                    const nameArray = placeName[randomIndex];
-
-                    function changeRandomImage() {
-                        randomImgElement.src = imageArray[currentImageIndex];
-                        randomNameElement.innerText = `${areaNames[currentImageIndex]} - Awesome Place 😍`;
-                        currentImageIndex = (currentImageIndex + 1) % imageArray.length;
-                    }
-
-                    setInterval(changeRandomImage, 2000);
-                    changeRandomImage();
-                } else {
-                    randomImgElement.src = './assets/home/bhor-ghat.jpg';
-                    randomNameElement.innerText = 'Default Place - Awesome Place 😍';
-                }
-            }
-
-            break;
+            callRandomSlider(bhorImageshow, bhorPlaceName)
+        break;
 
     case 1:
         randomImgElement.src = './assets/home/bhutan.jpg'
@@ -376,4 +386,13 @@ function go() {
         randomNameElement.innerText = ` ${areaNames[7]} Snowing Mountains view ☃️❄️`
     break;
 }
+
+    function callRandomSlider(bhorImageshow, bhorPlaceName){
+        const imagesLength = bhorImageshow.length;
+        const randomIndex = Math.floor(Math.random()*imagesLength)
+        console.log(`randomIndex`, randomIndex)
+        console.log(`bhorImageshow`,bhorImageshow)
+        randomImgElement.src = bhorImageshow[randomIndex]
+        randomNameElement.innerText = bhorPlaceName[randomIndex]
+    }
 }

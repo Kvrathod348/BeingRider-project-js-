@@ -8,31 +8,27 @@ hamburger.addEventListener('click', () => {
 // themme part
 
 
-function light() {
-    const lightMood = document.getElementById('icon-1')
-    lightMood.classList.add('active-one')
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
 
-    const darkMood = document.getElementById('icon-2')
-    darkMood.classList.remove('active-two')
-
-    const categorie = document.getElementById('categorie')
-    categorie.classList.remove('categories-box')
-
-}
-
-function dark() {
-    const darkMood = document.getElementById('icon-2')
-    darkMood.classList.add('active-two')
-
-    const lightMood = document.getElementById('icon-1')
-    lightMood.classList.remove('active-one')
-
-    const body = document.getElementById('body')
-    body.classList = 'bg-black'
-
-    const footerBox = document.getElementById('footer')
-    footerBox.classList.add('footer-box')
-}
+themeIcon.addEventListener('click', () => {
+    if (body.classList.contains('bg-black')) {
+        body.classList.remove('bg-black');
+        body.classList.add('bg-light');
+        themeIcon.classList.add('active-one')
+        themeIcon.src = './assets/home/moon.png';
+        body.style.transition = '2s';
+    } else {
+        body.classList.remove('bg-light');
+        body.classList.add('bg-black');
+        categories.classList.add('categories-box')
+        categorie.classList.add('categories-box')
+        footer.classList.add('footer-box')
+        themeIcon.classList.add('active-one');
+        themeIcon.src = './assets/home/sun.png';
+        body.style.transition = '2s';
+    }
+});
 
 
 function search() {
@@ -124,6 +120,9 @@ The lake's water is brackish and has low micro-vegetation. Guides say there are 
     spotName.innerText = "Spot : " + searchInputValue;
 
 }
+
+// Image Slider
+
 const offerPoster = [
     '../assets/ladakh/accesoriesone.jpg',
     '../assets/ladakh/postertwo.png',
@@ -132,17 +131,11 @@ const offerPoster = [
 ];
 
 let offerImgIndex = 0;
+const offerPosterImg = document.getElementById('accesories-poster');
 
 function left() {
 
-    if (offerImgIndex == 0) {
-
-        offerImgIndex = offerPoster.length - 1;
-    } else {
-        offerImgIndex--;
-    }
-
-    const offerPosterImg = document.getElementById('accesories-poster')
+    offerImgIndex == 0 ? offerImgIndex = offerPoster.length - 1 : offerImgIndex--;     
 
     offerPosterImg.src = offerPoster[offerImgIndex];
 }
